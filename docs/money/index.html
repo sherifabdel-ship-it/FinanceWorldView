@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Where Money's At</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+:root{--bg:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--line:#e4e3df;--card:#f4f3ef;--accent:#2a78d6;
+ --red:#c62828;--yellow:#8a6400;--green:#1b6e2e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;
+ --line:#34332f;--card:#242422;--accent:#3987e5;--red:#e66767;--yellow:#e0b030;--green:#4cc36b}}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,Segoe UI,Arial,sans-serif;
+ max-width:1000px;margin:32px auto;padding:0 16px}
+h1{margin:0 0 4px}h2{margin-top:28px}
+.meta,.note{color:var(--ink2);font-size:.88em}
+.tabs{display:flex;gap:8px;margin:14px 0}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 16px;
+ border-radius:8px;cursor:pointer;font-size:.95em}
+.tabs button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.hide{display:none}
+table{border-collapse:collapse;width:100%;margin:10px 0 18px}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;font-size:.9em}
+th{color:var(--ink2);font-weight:600}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.red{color:var(--red);font-weight:600}.yellow{color:var(--yellow);font-weight:600}.green{color:var(--green);font-weight:600}
+.watch{background:var(--card);border-radius:10px;padding:12px 16px;margin:14px 0}
+.chart{background:#fcfcfb;border-radius:10px;padding:8px;margin:8px 0}
+.chart img{max-width:100%;display:block}
+</style></head><body>
+<h1>Where Money's At</h1>
+<div class="meta">Approximate zero-sum shares &middot; updated 2026-11-10 10:15 UTC</div>
+<div class='watch'><b>Crowding watch</b><ul><li><span class="red">▲ RED - extreme</span> <b>US Treasuries</b> (asset class) - share is low vs its history, 3th percentile</li><li><span class="red">▲ RED - extreme</span> <b>WTI Crude Oil</b> (commodity) - specs crowded SHORT vs. hedgers, 5th percentile</li><li><span class="red">▲ RED - extreme</span> <b>US stocks</b> (asset class) - share is high vs its history, 92th percentile</li><li><span class="red">▲ RED - extreme</span> <b>Gold</b> (asset class) - share is high vs its history, 91th percentile</li><li><span class="yellow">■ YELLOW - elevated</span> <b>Platinum</b> (commodity) - specs crowded LONG vs. hedgers, 10th percentile</li><li><span class="yellow">■ YELLOW - elevated</span> <b>Palladium</b> (commodity) - specs crowded SHORT vs. hedgers, 19th percentile</li><li><span class="yellow">■ YELLOW - elevated</span> <b>Bitcoin</b> (asset class) - share is high vs its history, 76th percentile</li></ul></div>
+<div class="tabs">
+  <button data-mode="current" class="on" onclick="show('current', window._s)">Current</button>
+  <button data-mode="historical" onclick="show('historical', window._s)">Historical</button>
+  <span style="width:24px"></span>
+  <button data-scope="assets" class="on" onclick="show(window._m, 'assets')">Asset classes</button>
+  <button data-scope="commodities" onclick="show(window._m, 'commodities')">Commodities</button>
+</div>
+
+<div id="current-assets">
+  <h2>Asset classes - now</h2>
+  <div class="chart"><img src="assets_current.png" alt="Asset class shares now"></div>
+  <table><tr><th>Asset</th><th class='n'>Share</th><th class='n'>1m chg (pts)</th><th class='n'>3m chg (pts)</th><th>Crowding</th><th>Why this band</th></tr><tr><td>US stocks</td><td class='n'>51.8%</td><td class='n'>-0.4</td><td class='n'>+0.9</td><td><span class="red">▲ RED - extreme</span> (92th pct)</td><td>share is high vs its history</td></tr><tr><td>US Treasuries</td><td class='n'>24.6%</td><td class='n'>-0.2</td><td class='n'>+0.4</td><td><span class="red">▲ RED - extreme</span> (3th pct)</td><td>share is low vs its history</td></tr><tr><td>Gold</td><td class='n'>17.4%</td><td class='n'>+0.7</td><td class='n'>-1.3</td><td><span class="red">▲ RED - extreme</span> (91th pct)</td><td>share is high vs its history</td></tr><tr><td>Cash (money funds)</td><td class='n'>5.3%</td><td class='n'>-0.0</td><td class='n'>+0.1</td><td><span class="green">● GREEN - typical</span> (34th pct)</td><td>share is low vs its history</td></tr><tr><td>Bitcoin</td><td class='n'>0.9%</td><td class='n'>-0.0</td><td class='n'>-0.0</td><td><span class="yellow">■ YELLOW - elevated</span> (76th pct)</td><td>share is high vs its history</td></tr></table>
+</div>
+<div id="current-commodities" class="hide">
+  <h2>Commodities - now</h2>
+  <div class="chart"><img src="commodities_current.png" alt="Commodity shares now"></div>
+  <table><tr><th>Asset</th><th class='n'>Share</th><th class='n'>1m chg (pts)</th><th class='n'>3m chg (pts)</th><th>Crowding</th><th>Speculators vs hedgers</th></tr><tr><td>Gold</td><td class='n'>34.5%</td><td class='n'>-0.1</td><td class='n'>-5.6</td><td><span class="green">● GREEN - typical</span> (72th pct)</td><td>specs crowded LONG vs. hedgers</td></tr><tr><td>WTI Crude Oil</td><td class='n'>16.2%</td><td class='n'>-0.2</td><td class='n'>+3.4</td><td><span class="red">▲ RED - extreme</span> (5th pct)</td><td>specs crowded SHORT vs. hedgers</td></tr><tr><td>Soybeans</td><td class='n'>12.6%</td><td class='n'>-0.2</td><td class='n'>+0.8</td><td><span class="green">● GREEN - typical</span> (69th pct)</td><td>specs crowded LONG vs. hedgers</td></tr><tr><td>Henry Hub Natural Gas</td><td class='n'>12.1%</td><td class='n'>+0.3</td><td class='n'>+1.1</td><td><span class="green">● GREEN - typical</span> (37th pct)</td><td>specs crowded SHORT vs. hedgers</td></tr><tr><td>Corn</td><td class='n'>9.3%</td><td class='n'>+0.4</td><td class='n'>+0.8</td><td><span class="green">● GREEN - typical</span> (57th pct)</td><td>specs crowded LONG vs. hedgers</td></tr><tr><td>Silver</td><td class='n'>6.3%</td><td class='n'>-0.5</td><td class='n'>-1.5</td><td><span class="green">● GREEN - typical</span> (37th pct)</td><td>specs crowded LONG vs. hedgers</td></tr><tr><td>Copper</td><td class='n'>4.8%</td><td class='n'>+0.1</td><td class='n'>+0.4</td><td><span class="green">● GREEN - typical</span> (61th pct)</td><td>specs crowded LONG vs. hedgers</td></tr><tr><td>Wheat</td><td class='n'>2.2%</td><td class='n'>+0.0</td><td class='n'>+0.1</td><td><span class="green">● GREEN - typical</span> (37th pct)</td><td>specs crowded SHORT vs. hedgers</td></tr><tr><td>Platinum</td><td class='n'>1.4%</td><td class='n'>+0.1</td><td class='n'>+0.2</td><td><span class="yellow">■ YELLOW - elevated</span> (10th pct)</td><td>specs crowded LONG vs. hedgers</td></tr><tr><td>Palladium</td><td class='n'>0.6%</td><td class='n'>+0.0</td><td class='n'>+0.2</td><td><span class="yellow">■ YELLOW - elevated</span> (19th pct)</td><td>specs crowded SHORT vs. hedgers</td></tr></table>
+</div>
+<div id="historical-assets" class="hide">
+  <h2>Asset classes - history</h2>
+  <div class="chart"><img src="assets_history.png" alt="Asset class share history"></div>
+  <div style='overflow-x:auto'><table><tr><th>Share %</th><th class='n'>Dec 25</th><th class='n'>Jan 26</th><th class='n'>Feb 26</th><th class='n'>Mar 26</th><th class='n'>Apr 26</th><th class='n'>May 26</th><th class='n'>Jun 26</th><th class='n'>Jul 26</th><th class='n'>Aug 26</th><th class='n'>Sep 26</th><th class='n'>Oct 26</th><th class='n'>Nov 26</th></tr><tr><td>US stocks</td><td class='n'>48.0</td><td class='n'>46.3</td><td class='n'>45.4</td><td class='n'>46.6</td><td class='n'>50.7</td><td class='n'>50.7</td><td class='n'>52.0</td><td class='n'>51.9</td><td class='n'>51.0</td><td class='n'>51.6</td><td class='n'>52.2</td><td class='n'>51.8</td></tr><tr><td>US Treasuries</td><td class='n'>25.7</td><td class='n'>25.8</td><td class='n'>25.3</td><td class='n'>26.0</td><td class='n'>24.1</td><td class='n'>24.1</td><td class='n'>24.7</td><td class='n'>24.6</td><td class='n'>24.2</td><td class='n'>24.5</td><td class='n'>24.8</td><td class='n'>24.6</td></tr><tr><td>Cash (money funds)</td><td class='n'>5.5</td><td class='n'>5.5</td><td class='n'>5.4</td><td class='n'>5.5</td><td class='n'>5.1</td><td class='n'>5.2</td><td class='n'>5.3</td><td class='n'>5.3</td><td class='n'>5.2</td><td class='n'>5.2</td><td class='n'>5.3</td><td class='n'>5.3</td></tr><tr><td>Gold</td><td class='n'>19.7</td><td class='n'>21.3</td><td class='n'>23.1</td><td class='n'>21.0</td><td class='n'>19.2</td><td class='n'>19.1</td><td class='n'>17.2</td><td class='n'>17.4</td><td class='n'>18.7</td><td class='n'>17.7</td><td class='n'>16.7</td><td class='n'>17.4</td></tr><tr><td>Bitcoin</td><td class='n'>1.2</td><td class='n'>1.0</td><td class='n'>0.9</td><td class='n'>0.9</td><td class='n'>0.9</td><td class='n'>0.9</td><td class='n'>0.7</td><td class='n'>0.8</td><td class='n'>1.0</td><td class='n'>1.0</td><td class='n'>1.0</td><td class='n'>0.9</td></tr></table></div>
+</div>
+<div id="historical-commodities" class="hide">
+  <h2>Commodities - history</h2>
+  <div class="chart"><img src="commodities_history.png" alt="Commodity share history"></div>
+  <div style='overflow-x:auto'><table><tr><th>Share %</th><th class='n'>Dec 25</th><th class='n'>Jan 26</th><th class='n'>Feb 26</th><th class='n'>Mar 26</th><th class='n'>Apr 26</th><th class='n'>May 26</th><th class='n'>Jun 26</th><th class='n'>Jul 26</th><th class='n'>Aug 26</th><th class='n'>Sep 26</th><th class='n'>Oct 26</th><th class='n'>Nov 26</th></tr><tr><td>WTI Crude Oil</td><td class='n'>9.3</td><td class='n'>9.0</td><td class='n'>10.6</td><td class='n'>17.7</td><td class='n'>17.7</td><td class='n'>16.4</td><td class='n'>13.5</td><td class='n'>14.0</td><td class='n'>12.8</td><td class='n'>13.7</td><td class='n'>16.4</td><td class='n'>16.2</td></tr><tr><td>Henry Hub Natural Gas</td><td class='n'>11.3</td><td class='n'>9.8</td><td class='n'>10.8</td><td class='n'>11.2</td><td class='n'>11.4</td><td class='n'>11.6</td><td class='n'>13.3</td><td class='n'>12.5</td><td class='n'>11.0</td><td class='n'>11.4</td><td class='n'>11.8</td><td class='n'>12.1</td></tr><tr><td>Copper</td><td class='n'>4.5</td><td class='n'>3.9</td><td class='n'>4.3</td><td class='n'>4.5</td><td class='n'>4.6</td><td class='n'>4.6</td><td class='n'>5.3</td><td class='n'>5.0</td><td class='n'>4.4</td><td class='n'>4.5</td><td class='n'>4.7</td><td class='n'>4.8</td></tr><tr><td>Gold</td><td class='n'>43.2</td><td class='n'>44.1</td><td class='n'>42.4</td><td class='n'>34.2</td><td class='n'>35.3</td><td class='n'>33.5</td><td class='n'>36.0</td><td class='n'>35.0</td><td class='n'>40.0</td><td class='n'>35.1</td><td class='n'>34.5</td><td class='n'>34.5</td></tr><tr><td>Silver</td><td class='n'>12.4</td><td class='n'>14.7</td><td class='n'>10.7</td><td class='n'>8.8</td><td class='n'>7.7</td><td class='n'>8.2</td><td class='n'>7.8</td><td class='n'>6.9</td><td class='n'>7.8</td><td class='n'>6.7</td><td class='n'>6.7</td><td class='n'>6.3</td></tr><tr><td>Platinum</td><td class='n'>1.9</td><td class='n'>1.8</td><td class='n'>1.5</td><td class='n'>1.2</td><td class='n'>1.2</td><td class='n'>1.3</td><td class='n'>1.0</td><td class='n'>1.0</td><td class='n'>1.2</td><td class='n'>1.1</td><td class='n'>1.4</td><td class='n'>1.4</td></tr><tr><td>Palladium</td><td class='n'>0.7</td><td class='n'>0.6</td><td class='n'>0.6</td><td class='n'>0.5</td><td class='n'>0.5</td><td class='n'>0.5</td><td class='n'>0.5</td><td class='n'>0.5</td><td class='n'>0.5</td><td class='n'>0.5</td><td class='n'>0.6</td><td class='n'>0.6</td></tr><tr><td>Corn</td><td class='n'>6.9</td><td class='n'>6.5</td><td class='n'>6.9</td><td class='n'>8.5</td><td class='n'>8.7</td><td class='n'>9.0</td><td class='n'>8.6</td><td class='n'>9.0</td><td class='n'>8.5</td><td class='n'>10.0</td><td class='n'>8.9</td><td class='n'>9.3</td></tr><tr><td>Wheat</td><td class='n'>1.5</td><td class='n'>1.5</td><td class='n'>1.7</td><td class='n'>1.8</td><td class='n'>1.9</td><td class='n'>2.1</td><td class='n'>1.8</td><td class='n'>2.3</td><td class='n'>2.0</td><td class='n'>2.2</td><td class='n'>2.1</td><td class='n'>2.2</td></tr><tr><td>Soybeans</td><td class='n'>8.3</td><td class='n'>8.1</td><td class='n'>10.6</td><td class='n'>11.7</td><td class='n'>11.0</td><td class='n'>12.8</td><td class='n'>12.1</td><td class='n'>13.9</td><td class='n'>11.9</td><td class='n'>14.6</td><td class='n'>12.9</td><td class='n'>12.6</td></tr></table></div>
+</div>
+
+<p class="note"><b>How to read the crowding band.</b> Asset classes: where today's SHARE sits versus its own
+history. Commodities: where the speculator-minus-hedger positioning gap sits versus its own history (CFTC data).
+&#9679; green = typical (25th-75th percentile), &#9632; yellow = elevated (10-25th / 75-90th),
+&#9650; red = extreme (top or bottom 10%). Extremes are a contrarian warning, not a timing signal.</p>
+<p class="note"><b>Limits.</b> Shares move with prices, not only with money flows. Source data is quarterly or
+monthly, so "current" means the latest reading available. The asset-class pie mixes scopes and is approximate -
+trust the trend and the band more than the absolute level. Commodity open interest is dollar-notional
+(contracts x price x contract size) and covers futures only.</p>
+<script>
+function show(mode, scope){
+  for (const m of ['current','historical']) for (const s of ['assets','commodities']) {
+    document.getElementById(m+'-'+s).classList.toggle('hide', !(m===mode && s===scope));
+  }
+  for (const b of document.querySelectorAll('[data-mode]')) b.classList.toggle('on', b.dataset.mode===mode);
+  for (const b of document.querySelectorAll('[data-scope]')) b.classList.toggle('on', b.dataset.scope===scope);
+  window._m = mode; window._s = scope;
+}
+window._m='current'; window._s='assets';
+</script></body></html>

@@ -1,0 +1,142 @@
+{
+  "asset_classes": [
+    {
+      "name": "US stocks",
+      "share": 51.82670697834355,
+      "d1": -0.4038726560845807,
+      "d3": 0.872746534588209,
+      "band": "red",
+      "percentile": 91.6083916083916,
+      "basis": "share is high vs its history"
+    },
+    {
+      "name": "US Treasuries",
+      "share": 24.62595159094248,
+      "d1": -0.19190392478148632,
+      "d3": 0.4146937971751308,
+      "band": "red",
+      "percentile": 2.797202797202797,
+      "basis": "share is low vs its history"
+    },
+    {
+      "name": "Gold",
+      "share": 17.35695866138503,
+      "d1": 0.6832665497922469,
+      "d3": -1.3397944416277423,
+      "band": "red",
+      "percentile": 90.9090909090909,
+      "basis": "share is high vs its history"
+    },
+    {
+      "name": "Cash (money funds)",
+      "share": 5.267720108773939,
+      "d1": -0.04105003454550338,
+      "d3": 0.08870686057738802,
+      "band": "green",
+      "percentile": 33.56643356643357,
+      "basis": "share is low vs its history"
+    },
+    {
+      "name": "Bitcoin",
+      "share": 0.9226626605549997,
+      "d1": -0.04643993438067824,
+      "d3": -0.036352750712989254,
+      "band": "yellow",
+      "percentile": 75.52447552447552,
+      "basis": "share is high vs its history"
+    }
+  ],
+  "commodities": [
+    {
+      "name": "Gold",
+      "share": 34.45889405349284,
+      "d1": -0.05815525024137069,
+      "d3": -5.5520328230695135,
+      "band": "green",
+      "percentile": 72.33009708737865,
+      "basis": "specs crowded LONG vs. hedgers"
+    },
+    {
+      "name": "WTI Crude Oil",
+      "share": 16.18876908993501,
+      "d1": -0.2447544842955507,
+      "d3": 3.4249043941756376,
+      "band": "red",
+      "percentile": 4.692556634304207,
+      "basis": "specs crowded SHORT vs. hedgers"
+    },
+    {
+      "name": "Soybeans",
+      "share": 12.645011774641166,
+      "d1": -0.20615596675770953,
+      "d3": 0.7528458755368866,
+      "band": "green",
+      "percentile": 69.41747572815534,
+      "basis": "specs crowded LONG vs. hedgers"
+    },
+    {
+      "name": "Henry Hub Natural Gas",
+      "share": 12.103169943753095,
+      "d1": 0.30917423019890117,
+      "d3": 1.1008559114226144,
+      "band": "green",
+      "percentile": 37.2972972972973,
+      "basis": "specs crowded SHORT vs. hedgers"
+    },
+    {
+      "name": "Corn",
+      "share": 9.299871087884377,
+      "d1": 0.39475108908787887,
+      "d3": 0.7889546836643696,
+      "band": "green",
+      "percentile": 56.79611650485437,
+      "basis": "specs crowded LONG vs. hedgers"
+    },
+    {
+      "name": "Silver",
+      "share": 6.278213004649835,
+      "d1": -0.45749408264791486,
+      "d3": -1.499594539042136,
+      "band": "green",
+      "percentile": 37.055016181229774,
+      "basis": "specs crowded LONG vs. hedgers"
+    },
+    {
+      "name": "Copper",
+      "share": 4.813628402870299,
+      "d1": 0.12296364199109108,
+      "d3": 0.4378283794508428,
+      "band": "green",
+      "percentile": 60.810810810810814,
+      "basis": "specs crowded LONG vs. hedgers"
+    },
+    {
+      "name": "Wheat",
+      "share": 2.1552308711000445,
+      "d1": 0.03786766368250351,
+      "d3": 0.14571645278454204,
+      "band": "green",
+      "percentile": 37.37864077669903,
+      "basis": "specs crowded SHORT vs. hedgers"
+    },
+    {
+      "name": "Platinum",
+      "share": 1.4322032960281446,
+      "d1": 0.06850240548771733,
+      "d3": 0.2396003263480882,
+      "band": "yellow",
+      "percentile": 10.194174757281553,
+      "basis": "specs crowded LONG vs. hedgers"
+    },
+    {
+      "name": "Palladium",
+      "share": 0.6250084756452005,
+      "d1": 0.03330075349447818,
+      "d3": 0.16092133872867817,
+      "band": "yellow",
+      "percentile": 18.932038834951456,
+      "basis": "specs crowded SHORT vs. hedgers"
+    }
+  ],
+  "skipped": []
+}
