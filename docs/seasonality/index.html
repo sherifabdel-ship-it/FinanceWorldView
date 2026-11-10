@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Seasonality Dashboard</title>
+<style>
+  body { font-family: -apple-system, Arial, sans-serif; max-width: 960px; margin: 40px auto; padding: 0 16px; color: #1a1a1a; }
+  h1 { margin-bottom: 4px; }
+  .meta { color: #666; font-size: 0.9em; margin-bottom: 24px; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 32px; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 0.92em; }
+  th { background: #f4f4f4; }
+  img { border: 1px solid #eee; border-radius: 4px; margin-bottom: 28px; }
+</style>
+</head>
+<body>
+  <h1>Seasonality Dashboard</h1>
+  <div class="meta">Last updated: 2026-11-10 10:14 UTC &middot; Current month: Nov</div>
+
+  <h2>This month, at a glance</h2>
+  <table>
+    <tr><th>Instrument</th><th>Avg return, Nov</th><th>Historically positive</th><th>Years of data</th><th>Read</th></tr>
+    
+        <tr>
+          <td>Natural Gas (Henry Hub)</td>
+          <td>+3.4%</td>
+          <td>59%</td>
+          <td>17</td>
+          <td>strong seasonal tilt up (+3.4% avg, 59% of years positive) - mixed/unreliable</td>
+        </tr>
+        <tr>
+          <td>Corn</td>
+          <td>-2.1%</td>
+          <td>24%</td>
+          <td>17</td>
+          <td>mild seasonal tilt down (-2.1% avg, 24% of years positive) - reliable</td>
+        </tr>
+        <tr>
+          <td>Heating Oil</td>
+          <td>-4.0%</td>
+          <td>35%</td>
+          <td>17</td>
+          <td>strong seasonal tilt down (-4.0% avg, 35% of years positive) - mixed/unreliable</td>
+        </tr>
+        <tr>
+          <td>WTI Crude Oil</td>
+          <td>-3.5%</td>
+          <td>41%</td>
+          <td>17</td>
+          <td>strong seasonal tilt down (-3.5% avg, 41% of years positive) - mixed/unreliable</td>
+        </tr>
+        <tr>
+          <td>Copper</td>
+          <td>+1.5%</td>
+          <td>53%</td>
+          <td>17</td>
+          <td>mild seasonal tilt up (+1.5% avg, 53% of years positive) - mixed/unreliable</td>
+        </tr>
+        <tr>
+          <td>US 10Y Treasury Yield</td>
+          <td>-0.1%</td>
+          <td>35%</td>
+          <td>17</td>
+          <td>flat seasonal tilt down (-0.1% avg, 35% of years positive) - mixed/unreliable</td>
+        </tr>
+  </table>
+
+  <h2>Full-year charts</h2>
+  
+        <h3>Natural Gas (Henry Hub)</h3>
+        <img src="charts/Natural_Gas_Henry_Hub.png" alt="Natural Gas (Henry Hub) seasonality chart" style="max-width:100%;">
+        
+        <h3>Corn</h3>
+        <img src="charts/Corn.png" alt="Corn seasonality chart" style="max-width:100%;">
+        
+        <h3>Heating Oil</h3>
+        <img src="charts/Heating_Oil.png" alt="Heating Oil seasonality chart" style="max-width:100%;">
+        
+        <h3>WTI Crude Oil</h3>
+        <img src="charts/WTI_Crude_Oil.png" alt="WTI Crude Oil seasonality chart" style="max-width:100%;">
+        
+        <h3>Copper</h3>
+        <img src="charts/Copper.png" alt="Copper seasonality chart" style="max-width:100%;">
+        
+        <h3>US 10Y Treasury Yield</h3>
+        <img src="charts/US_10Y_Treasury_Yield.png" alt="US 10Y Treasury Yield seasonality chart" style="max-width:100%;">
+        
+</body>
+</html>
