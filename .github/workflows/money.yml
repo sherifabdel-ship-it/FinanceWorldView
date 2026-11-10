@@ -9,9 +9,6 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: repo-writes
-  cancel-in-progress: false
 
 jobs:
   run-money:
@@ -29,9 +26,15 @@ jobs:
         with:
           name: money-dashboard
           path: docs/money/
-      - name: Sync with latest main before committing
-        run: git pull --rebase --autostash origin main
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Automated update: refresh Where Money's At dashboard"
-          file_pattern: "docs/money/**"
+      - name: Commit and push (retries if another workflow pushed first)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/money/
+          if git diff --cached --quiet; then echo "Nothing changed."; exit 0; fi
+          git commit -m "Automated update: refresh Where Money's At dashboard"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            echo "Push attempt $i failed, retrying..."; sleep $((i * 5))
+          done
+          echo "Could not push after 5 attempts"; exit 1
