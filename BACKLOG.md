@@ -17,13 +17,17 @@ Last updated: 2026-11-09.
 - [ ] **Telegram crowding alerts for this dashboard** - message when any asset or commodity
       enters RED, or moves to a different band. (`docs/money/latest.json` already has what
       the alert needs.)
-- [ ] **Verify FRED series IDs** after the first real run - check the "Data not loaded"
-      box on the dashboard. `NCBEILQ027S` covers nonfinancial corporate equities only,
+- [x] FRED series IDs loaded on the first real run (nothing skipped). Still open: the definitions below.
+- [ ] **Tighten the asset-class definitions.** `NCBEILQ027S` covers nonfinancial corporate equities only,
       so it understates total US equities; swap in a broader series if you find one.
 - [ ] **Back-adjusted futures prices** - Yahoo continuous contracts show roll gaps.
 
 ## Earlier items still open
 
-- [ ] Confirm CFTC market-name strings for Copper, Gold, Silver, Platinum, Palladium,
-      Corn, Wheat, Soybeans on the first real COT run (use `list_available_markets`).
+- [x] CFTC market-name strings for all commodities - confirmed on the first real run (none skipped).
 - [ ] Set the `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` repo secrets.
+
+## Added 2026-11-10
+- [x] Trends view with per-asset price/share/percentile charts, predictive test, 5-year tables, history back to 2006.
+- [ ] **Check the first real predictive results** - decide which readings (if any) deserve an alert.
+- [ ] Add a "Telegram alert when something enters RED" using `docs/money/latest.json`.

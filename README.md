@@ -178,16 +178,27 @@ the dashboard silently.
 
 ## Where Money's At (`wheres_money_at.py`)
 
-Dashboard with two modes (Current / Historical) and two views (Asset classes / Commodities).
+Three modes (Current / Historical / Trends) for two views (Asset classes / Commodities).
 Shares are normalized to 100% (an approximate zero-sum view). Each asset gets a red/yellow/green
 crowding band, and a "Crowding watch" box at the top lists everything outside its normal range.
 
-- **Asset classes:** US stocks, US Treasuries, cash (money funds), gold, bitcoin. FRED data is
-  quarterly, so it is carried forward; prices are monthly closes.
-- **Commodities:** share of dollar-notional futures open interest (contracts x price x contract size).
-  The band comes from the speculator-vs-hedger gap, same as the COT dashboard.
+- **Current:** share now, 1m/3m change, band. Tap a name to jump to its trend section.
+- **Historical:** stacked share chart back to 2006 plus a month-by-month table. The **History in tables**
+  selector (3 / 5 / 10 years / all) controls how far back the tables go.
+- **Trends:** one section per asset with (1) price chart with markers on extreme months, (2) its own share
+  trend, (3) its percentile with red/yellow/green bands, (4) a **"Does it predict?"** test, (5) the monthly
+  percentage table underneath.
+
+**The predictive test:** each month's reading is ranked against its own history using only data available
+at that date (no hindsight), then compared with the price move over the next 3, 6 and 12 months. It reports
+average forward returns after top-10%, middle and bottom-10% readings plus a rank correlation, and says in plain
+words when there is no meaningful link. Months overlap, so treat results as hints, not proof.
+
+- **Asset classes:** US stocks, US Treasuries, cash (money funds), gold, bitcoin. FRED data is quarterly, so it
+  is carried forward; prices are monthly closes. Share is built partly from price, so a share/price link is
+  partly mechanical. Cash has no price series, so it is not tested.
+- **Commodities:** share of dollar-notional futures open interest (contracts x price x contract size). The band
+  and the predictive test use the speculator-vs-hedger gap from CFTC data.
 - Series that fail to download are skipped and listed on the dashboard instead of breaking the run.
-- Shares move with prices, not only money flows. Flows, a stocks drill-down and stock-sentiment
-  inputs are on the backlog - see `BACKLOG.md`.
 
 Run: `python wheres_money_at.py` -> open `docs/money/index.html`.

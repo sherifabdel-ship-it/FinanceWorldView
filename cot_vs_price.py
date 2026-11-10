@@ -300,7 +300,14 @@ def classify_band(merged):
     else:
         band = "green"
 
-    direction = "specs crowded LONG vs. hedgers" if current > 0 else "specs crowded SHORT vs. hedgers"
+    # Wording follows where the reading sits in its OWN history, not whether the
+    # raw gap is above zero (a positive gap at the 10th percentile is NOT "crowded long").
+    if percentile >= 100 - BAND_YELLOW_PCT:
+        direction = "specs crowded LONG vs. hedgers"
+    elif percentile <= BAND_YELLOW_PCT:
+        direction = "specs crowded SHORT vs. hedgers"
+    else:
+        direction = "specs near their usual positioning"
 
     return {
         "diff_pct": current * 100,
