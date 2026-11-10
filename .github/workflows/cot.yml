@@ -1,0 +1,44 @@
+name: Smart Money / Dumb Money (COT) Dashboard + Telegram Alert
+
+# CFTC publishes the COT report Fridays ~3:30pm US Eastern. Two UTC times cover
+# both EDT and EST; telegram_alert.py de-duplicates so you get ONE message per week.
+on:
+  schedule:
+    - cron: "40 19 * * 5"
+    - cron: "40 20 * * 5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-writes
+  cancel-in-progress: false
+
+jobs:
+  run-cot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run COT dashboard script
+        run: python cot_vs_price.py
+      - name: Send Telegram alert
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python telegram_alert.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cot-dashboard
+          path: docs/cot/
+      - name: Sync with latest main before committing
+        run: git pull --rebase --autostash origin main
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated update: refresh COT dashboard"
+          file_pattern: "docs/cot/**"

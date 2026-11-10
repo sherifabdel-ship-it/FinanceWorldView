@@ -1,0 +1,37 @@
+name: Seasonality Dashboard
+
+on:
+  schedule:
+    - cron: "0 12 * * 1"   # Mondays 12:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# Same group name as the other workflows so only ONE job pushes to main at a time.
+concurrency:
+  group: repo-writes
+  cancel-in-progress: false
+
+jobs:
+  run-seasonality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run seasonality dashboard script
+        run: python seasonality_analysis.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seasonality-dashboard
+          path: docs/seasonality/
+      - name: Sync with latest main before committing
+        run: git pull --rebase --autostash origin main
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated update: refresh seasonality dashboard"
+          file_pattern: "docs/seasonality/**"

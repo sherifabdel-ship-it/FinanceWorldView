@@ -1,0 +1,37 @@
+name: Where Money's At Dashboard
+
+# Saturday, after Friday's COT release, so commodity positioning is fresh.
+on:
+  schedule:
+    - cron: "30 14 * * 6"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-writes
+  cancel-in-progress: false
+
+jobs:
+  run-money:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Build Where Money's At dashboard
+        run: python wheres_money_at.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: money-dashboard
+          path: docs/money/
+      - name: Sync with latest main before committing
+        run: git pull --rebase --autostash origin main
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated update: refresh Where Money's At dashboard"
+          file_pattern: "docs/money/**"
