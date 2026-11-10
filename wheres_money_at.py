@@ -55,7 +55,8 @@ import cot_vs_price as cvp
 # CONFIG
 # ----------------------------------------------------------------------
 
-START = "2006-01-01"          # as far back as the sources reasonably go
+START = "2006-01-01"          # data + percentiles + tables use the full history
+CHART_START = "2020-01-01"    # charts only SHOW 2020 onward (shorter, easier to read)
 OUT_DIR = "docs/money"
 HORIZONS = (3, 6, 12)         # months ahead used in the predictive test
 MIN_PCT_MONTHS = 36           # need 3 years of history before a percentile counts
@@ -349,7 +350,7 @@ def chart_current(rows, title, fname):
 
 
 def chart_history(shares, title, fname, max_series=6):
-    pct = shares * 100
+    pct = shares.loc[CHART_START:] * 100
     if pct.shape[1] > max_series:   # fold the tail into "Other" (never cycle colours)
         order = pct.iloc[-1].sort_values(ascending=False).index
         keep = list(order[: max_series - 1])
@@ -371,7 +372,9 @@ def chart_history(shares, title, fname, max_series=6):
 
 
 def chart_trend(info, share_title, pct_title, fname):
-    price, share, pct = info["price"], info["share"], info["pct"]
+    price, share, pct = info["price"], info["share"].loc[CHART_START:], info["pct"].loc[CHART_START:]
+    if price is not None:
+        price = price.loc[CHART_START:]
     has_price = price is not None
     n = 3 if has_price else 2
     ratios = [1.6, 1.3, 1.5] if has_price else [1.3, 1.5]
@@ -624,7 +627,7 @@ def build_html(asset_rows, comm_rows, asset_shares, comm_shares, asset_trends, c
   <button data-scope="assets" class="on" onclick="show(window._m, 'assets')">Asset classes</button>
   <button data-scope="commodities" onclick="show(window._m, 'commodities')">Commodities</button>
   <span class="sep"></span>
-  <label class="note">History in tables:
+  <label class="note">Charts show 2020 onward. History in tables:
     <select id="yrs" onchange="setYears(this.value)">
       <option value="3">3 years</option><option value="5" selected>5 years</option>
       <option value="10">10 years</option><option value="all">All</option></select></label>
