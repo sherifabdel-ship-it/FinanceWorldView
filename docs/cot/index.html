@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Smart Money / Dumb Money Dashboard</title>
+<style>
+  body { font-family: -apple-system, Arial, sans-serif; max-width: 1100px; margin: 40px auto; padding: 0 16px; color: #1a1a1a; }
+  h1 { margin-bottom: 4px; }
+  .meta { color: #666; font-size: 0.9em; margin-bottom: 24px; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 32px; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 0.9em; }
+  th { background: #f4f4f4; }
+  img { border: 1px solid #eee; border-radius: 4px; margin-bottom: 28px; }
+  .note { color: #666; font-size: 0.85em; }
+</style>
+</head>
+<body>
+  <h1>Commitments of Traders Dashboard</h1>
+  <div class="meta">Commercial ("smart money" hedgers) vs. Non-Commercial (speculators) &middot; Last updated: 2026-11-14 00:29 UTC</div>
+
+  <h2>Current positioning</h2>
+  <table>
+    <tr><th>Market</th><th>As of</th><th>Price</th><th>Spec-Hedger diff (% OI)</th><th>Range</th><th>Direction</th><th>Historical follow-through</th></tr>
+    
+        <tr>
+          <td>WTI Crude Oil</td>
+          <td>2026-11-03</td>
+          <td>96.09</td>
+          <td>-6.4%</td>
+          <td style="color:#c62828; font-weight:600;">🔴 RED (5th pct)</td>
+          <td>specs crowded SHORT vs. hedgers</td>
+          <td>+4w after crowded-long: +0.6% (n=45) &middot;
+              after crowded-short: +3.1% (n=22)</td>
+        </tr>
+        <tr>
+          <td>Henry Hub Natural Gas</td>
+          <td>2022-02-01</td>
+          <td>4.75</td>
+          <td>-18.1%</td>
+          <td style="color:#2e7d32; font-weight:600;">🟢 GREEN (37th pct)</td>
+          <td>specs near their usual positioning</td>
+          <td>+4w after crowded-long: +3.0% (n=32) &middot;
+              after crowded-short: +2.8% (n=13)</td>
+        </tr>
+        <tr>
+          <td>Copper</td>
+          <td>2022-02-01</td>
+          <td>4.43</td>
+          <td>+18.8%</td>
+          <td style="color:#2e7d32; font-weight:600;">🟢 GREEN (61th pct)</td>
+          <td>specs near their usual positioning</td>
+          <td>+4w after crowded-long: +3.7% (n=35) &middot;
+              after crowded-short: +2.0% (n=17)</td>
+        </tr>
+        <tr>
+          <td>Gold</td>
+          <td>2026-11-03</td>
+          <td>3940.40</td>
+          <td>+96.3%</td>
+          <td style="color:#2e7d32; font-weight:600;">🟢 GREEN (72th pct)</td>
+          <td>specs near their usual positioning</td>
+          <td>+4w after crowded-long: +2.2% (n=12) &middot;
+              after crowded-short: +0.5% (n=40)</td>
+        </tr>
+        <tr>
+          <td>Silver</td>
+          <td>2026-11-03</td>
+          <td>49.59</td>
+          <td>+48.5%</td>
+          <td style="color:#2e7d32; font-weight:600;">🟢 GREEN (37th pct)</td>
+          <td>specs near their usual positioning</td>
+          <td>+4w after crowded-long: +8.7% (n=5) &middot;
+              after crowded-short: +0.0% (n=44)</td>
+        </tr>
+        <tr>
+          <td>Platinum</td>
+          <td>2026-11-03</td>
+          <td>1432.40</td>
+          <td>+17.4%</td>
+          <td style="color:#b8860b; font-weight:600;">🟡 YELLOW (10th pct)</td>
+          <td>specs crowded SHORT vs. hedgers</td>
+          <td>+4w after crowded-long: -3.6% (n=12) &middot;
+              after crowded-short: +0.5% (n=31)</td>
+        </tr>
+        <tr>
+          <td>Palladium</td>
+          <td>2026-11-03</td>
+          <td>930.00</td>
+          <td>-76.8%</td>
+          <td style="color:#b8860b; font-weight:600;">🟡 YELLOW (19th pct)</td>
+          <td>specs crowded SHORT vs. hedgers</td>
+          <td>+4w after crowded-long: +2.6% (n=31) &middot;
+              after crowded-short: +1.2% (n=48)</td>
+        </tr>
+        <tr>
+          <td>Corn</td>
+          <td>2026-11-03</td>
+          <td>442.50</td>
+          <td>+14.3%</td>
+          <td style="color:#2e7d32; font-weight:600;">🟢 GREEN (57th pct)</td>
+          <td>specs near their usual positioning</td>
+          <td>+4w after crowded-long: +2.1% (n=33) &middot;
+              after crowded-short: +0.2% (n=29)</td>
+        </tr>
+        <tr>
+          <td>Wheat</td>
+          <td>2026-11-03</td>
+          <td>599.75</td>
+          <td>-7.1%</td>
+          <td style="color:#2e7d32; font-weight:600;">🟢 GREEN (37th pct)</td>
+          <td>specs near their usual positioning</td>
+          <td>+4w after crowded-long: -1.0% (n=39) &middot;
+              after crowded-short: +2.9% (n=20)</td>
+        </tr>
+        <tr>
+          <td>Soybeans</td>
+          <td>2026-11-03</td>
+          <td>1203.00</td>
+          <td>+32.0%</td>
+          <td style="color:#2e7d32; font-weight:600;">🟢 GREEN (69th pct)</td>
+          <td>specs near their usual positioning</td>
+          <td>+4w after crowded-long: +1.7% (n=43) &middot;
+              after crowded-short: -1.2% (n=19)</td>
+        </tr>
+  </table>
+  <p class="note">"Diff" is the gap between speculator and hedger positioning as a % of open interest.
+  "Range" shows where today's value sits versus its own full history:
+  🟢 green = typical (25th-75th percentile), 🟡 yellow = elevated (10th-25th or 75th-90th), 🔴 red = extreme (top/bottom 10%).
+  This is a contrarian tilt, not a timing signal - markets can stay crowded for a long time before reversing.</p>
+
+  <h2>Full charts</h2>
+  
+        <h3>WTI Crude Oil</h3>
+        <img src="WTI_Crude_Oil_cot_vs_price.png" alt="WTI Crude Oil COT chart" style="max-width:100%;">
+        
+        <h3>Henry Hub Natural Gas</h3>
+        <img src="Henry_Hub_Natural_Gas_cot_vs_price.png" alt="Henry Hub Natural Gas COT chart" style="max-width:100%;">
+        
+        <h3>Copper</h3>
+        <img src="Copper_cot_vs_price.png" alt="Copper COT chart" style="max-width:100%;">
+        
+        <h3>Gold</h3>
+        <img src="Gold_cot_vs_price.png" alt="Gold COT chart" style="max-width:100%;">
+        
+        <h3>Silver</h3>
+        <img src="Silver_cot_vs_price.png" alt="Silver COT chart" style="max-width:100%;">
+        
+        <h3>Platinum</h3>
+        <img src="Platinum_cot_vs_price.png" alt="Platinum COT chart" style="max-width:100%;">
+        
+        <h3>Palladium</h3>
+        <img src="Palladium_cot_vs_price.png" alt="Palladium COT chart" style="max-width:100%;">
+        
+        <h3>Corn</h3>
+        <img src="Corn_cot_vs_price.png" alt="Corn COT chart" style="max-width:100%;">
+        
+        <h3>Wheat</h3>
+        <img src="Wheat_cot_vs_price.png" alt="Wheat COT chart" style="max-width:100%;">
+        
+        <h3>Soybeans</h3>
+        <img src="Soybeans_cot_vs_price.png" alt="Soybeans COT chart" style="max-width:100%;">
+        
+</body>
+</html>

@@ -1,0 +1,82 @@
+{
+  "WTI Crude Oil": {
+    "report_date": "2026-11-03",
+    "price": 96.08999633789062,
+    "diff_pct": -6.448038969634945,
+    "percentile": 4.692556634304207,
+    "band": "red",
+    "direction": "specs crowded SHORT vs. hedgers"
+  },
+  "Henry Hub Natural Gas": {
+    "report_date": "2022-02-01",
+    "price": 4.750999927520752,
+    "diff_pct": -18.081239201832112,
+    "percentile": 37.2972972972973,
+    "band": "green",
+    "direction": "specs near their usual positioning"
+  },
+  "Copper": {
+    "report_date": "2022-02-01",
+    "price": 4.428999900817871,
+    "diff_pct": 18.750535434419994,
+    "percentile": 60.810810810810814,
+    "band": "green",
+    "direction": "specs near their usual positioning"
+  },
+  "Gold": {
+    "report_date": "2026-11-03",
+    "price": 3940.39990234375,
+    "diff_pct": 96.31258940448782,
+    "percentile": 72.33009708737865,
+    "band": "green",
+    "direction": "specs near their usual positioning"
+  },
+  "Silver": {
+    "report_date": "2026-11-03",
+    "price": 49.58700180053711,
+    "diff_pct": 48.456087832985816,
+    "percentile": 37.055016181229774,
+    "band": "green",
+    "direction": "specs near their usual positioning"
+  },
+  "Platinum": {
+    "report_date": "2026-11-03",
+    "price": 1432.4000244140625,
+    "diff_pct": 17.442319069217117,
+    "percentile": 10.194174757281553,
+    "band": "yellow",
+    "direction": "specs crowded SHORT vs. hedgers"
+  },
+  "Palladium": {
+    "report_date": "2026-11-03",
+    "price": 930.0,
+    "diff_pct": -76.77337332116312,
+    "percentile": 18.932038834951456,
+    "band": "yellow",
+    "direction": "specs crowded SHORT vs. hedgers"
+  },
+  "Corn": {
+    "report_date": "2026-11-03",
+    "price": 442.5,
+    "diff_pct": 14.338989128655877,
+    "percentile": 56.79611650485437,
+    "band": "green",
+    "direction": "specs near their usual positioning"
+  },
+  "Wheat": {
+    "report_date": "2026-11-03",
+    "price": 599.75,
+    "diff_pct": -7.09023127078526,
+    "percentile": 37.37864077669903,
+    "band": "green",
+    "direction": "specs near their usual positioning"
+  },
+  "Soybeans": {
+    "report_date": "2026-11-03",
+    "price": 1203.0,
+    "diff_pct": 32.003301458144016,
+    "percentile": 69.41747572815534,
+    "band": "green",
+    "direction": "specs near their usual positioning"
+  }
+}
