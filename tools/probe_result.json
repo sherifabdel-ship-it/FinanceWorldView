@@ -1,0 +1,4478 @@
+{
+ "cftc": {
+  "sample_keys": [
+   "cftc_commodity_code",
+   "cftc_contract_market_code",
+   "cftc_market_code",
+   "cftc_region_code",
+   "change_in_comm_long_all",
+   "change_in_comm_short_all",
+   "change_in_noncomm_long_all",
+   "change_in_noncomm_short_all",
+   "change_in_noncomm_spead_all",
+   "change_in_nonrept_long_all",
+   "change_in_nonrept_short_all",
+   "change_in_open_interest_all",
+   "change_in_tot_rept_long_all",
+   "change_in_tot_rept_short",
+   "comm_positions_long_all",
+   "comm_positions_long_old",
+   "comm_positions_long_other",
+   "comm_positions_short_all",
+   "comm_positions_short_old",
+   "comm_positions_short_other",
+   "commodity",
+   "commodity_group_name",
+   "commodity_name",
+   "commodity_subgroup_name",
+   "conc_gross_le_4_tdr_long",
+   "conc_gross_le_4_tdr_long_1",
+   "conc_gross_le_4_tdr_long_2",
+   "conc_gross_le_4_tdr_short",
+   "conc_gross_le_4_tdr_short_1",
+   "conc_gross_le_4_tdr_short_2",
+   "conc_gross_le_8_tdr_long",
+   "conc_gross_le_8_tdr_long_1",
+   "conc_gross_le_8_tdr_long_2",
+   "conc_gross_le_8_tdr_short",
+   "conc_gross_le_8_tdr_short_1",
+   "conc_gross_le_8_tdr_short_2",
+   "conc_net_le_4_tdr_long_all",
+   "conc_net_le_4_tdr_long_old",
+   "conc_net_le_4_tdr_long_other",
+   "conc_net_le_4_tdr_short_all",
+   "conc_net_le_4_tdr_short_old",
+   "conc_net_le_4_tdr_short_other",
+   "conc_net_le_8_tdr_long_all",
+   "conc_net_le_8_tdr_long_old",
+   "conc_net_le_8_tdr_long_other",
+   "conc_net_le_8_tdr_short_all",
+   "conc_net_le_8_tdr_short_old",
+   "conc_net_le_8_tdr_short_other",
+   "contract_market_name",
+   "contract_units",
+   "futonly_or_combined",
+   "id",
+   "market_and_exchange_names",
+   "noncomm_positions_long_all",
+   "noncomm_positions_long_old",
+   "noncomm_positions_long_other",
+   "noncomm_positions_short_all",
+   "noncomm_positions_short_old",
+   "noncomm_positions_short_other",
+   "noncomm_positions_spread",
+   "noncomm_positions_spread_1",
+   "noncomm_postions_spread_all",
+   "nonrept_positions_long_all",
+   "nonrept_positions_long_old",
+   "nonrept_positions_long_other",
+   "nonrept_positions_short_all",
+   "nonrept_positions_short_old",
+   "nonrept_positions_short_other",
+   "open_interest_all",
+   "open_interest_old",
+   "open_interest_other",
+   "pct_of_oi_comm_long_all",
+   "pct_of_oi_comm_long_old",
+   "pct_of_oi_comm_long_other",
+   "pct_of_oi_comm_short_all",
+   "pct_of_oi_comm_short_old",
+   "pct_of_oi_comm_short_other",
+   "pct_of_oi_noncomm_long_all",
+   "pct_of_oi_noncomm_long_old",
+   "pct_of_oi_noncomm_long_other",
+   "pct_of_oi_noncomm_short_all",
+   "pct_of_oi_noncomm_short_old",
+   "pct_of_oi_noncomm_short_other",
+   "pct_of_oi_noncomm_spread",
+   "pct_of_oi_noncomm_spread_1",
+   "pct_of_oi_noncomm_spread_2",
+   "pct_of_oi_nonrept_long_all",
+   "pct_of_oi_nonrept_long_old",
+   "pct_of_oi_nonrept_long_other",
+   "pct_of_oi_nonrept_short_all",
+   "pct_of_oi_nonrept_short_old",
+   "pct_of_oi_nonrept_short_other",
+   "pct_of_oi_tot_rept_long_all",
+   "pct_of_oi_tot_rept_long_old",
+   "pct_of_oi_tot_rept_long_other",
+   "pct_of_oi_tot_rept_short",
+   "pct_of_oi_tot_rept_short_1",
+   "pct_of_oi_tot_rept_short_2",
+   "pct_of_open_interest_all",
+   "pct_of_open_interest_old",
+   "pct_of_open_interest_other",
+   "report_date_as_yyyy_mm_dd",
+   "tot_rept_positions_long_all",
+   "tot_rept_positions_long_old",
+   "tot_rept_positions_long_other",
+   "tot_rept_positions_short",
+   "tot_rept_positions_short_1",
+   "tot_rept_positions_short_2",
+   "traders_comm_long_all",
+   "traders_comm_long_old",
+   "traders_comm_long_other",
+   "traders_comm_short_all",
+   "traders_comm_short_old",
+   "traders_comm_short_other",
+   "traders_noncomm_long_all",
+   "traders_noncomm_long_old",
+   "traders_noncomm_long_other",
+   "traders_noncomm_short_all",
+   "traders_noncomm_short_old",
+   "traders_noncomm_short_other",
+   "traders_noncomm_spead_old",
+   "traders_noncomm_spread_all",
+   "traders_noncomm_spread_other",
+   "traders_tot_all",
+   "traders_tot_old",
+   "traders_tot_other",
+   "traders_tot_rept_long_all",
+   "traders_tot_rept_long_old",
+   "traders_tot_rept_long_other",
+   "traders_tot_rept_short_all",
+   "traders_tot_rept_short_old",
+   "traders_tot_rept_short_other",
+   "yyyy_report_week_ww"
+  ],
+  "active": [
+   {
+    "code": "001602",
+    "name": "WHEAT-SRW - CHICAGO BOARD OF TRADE",
+    "first": "2013-12-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "673"
+   },
+   {
+    "code": "001612",
+    "name": "WHEAT-HRW - CHICAGO BOARD OF TRADE",
+    "first": "2013-12-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "673"
+   },
+   {
+    "code": "001626",
+    "name": "WHEAT-HRSpring - MIAX FUTURES EXCHANGE",
+    "first": "2024-11-26T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "102"
+   },
+   {
+    "code": "002602",
+    "name": "CORN - CHICAGO BOARD OF TRADE",
+    "first": "1998-01-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1505"
+   },
+   {
+    "code": "004603",
+    "name": "OATS - CHICAGO BOARD OF TRADE",
+    "first": "1998-01-06T00:00:00.000",
+    "last": "2026-10-20T00:00:00.000",
+    "n": "1355"
+   },
+   {
+    "code": "005602",
+    "name": "SOYBEANS - CHICAGO BOARD OF TRADE",
+    "first": "1998-01-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1505"
+   },
+   {
+    "code": "005603",
+    "name": "MINI SOYBEANS - CHICAGO BOARD OF TRADE",
+    "first": "2003-07-22T00:00:00.000",
+    "last": "2026-10-20T00:00:00.000",
+    "n": "544"
+   },
+   {
+    "code": "0063CC",
+    "name": "NJ SRECS - ICE FUTURES ENERGY DIV",
+    "first": "2019-06-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "388"
+   },
+   {
+    "code": "0063CH",
+    "name": "PJM TRI-RECs CLASS 1 - ICE FUTURES ENERGY DIV",
+    "first": "2019-06-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "388"
+   },
+   {
+    "code": "0063CU",
+    "name": "CALIF LOW CARBON FSC-OPIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-12-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "205"
+   },
+   {
+    "code": "0063CW",
+    "name": "D6 RINs OPIS CURRENT YEAR - ICE FUTURES ENERGY DIV",
+    "first": "2022-12-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "205"
+   },
+   {
+    "code": "0063DA",
+    "name": "PA SOLAR ALTER ENERGY CREDIT - ICE FUTURES ENERGY DIV",
+    "first": "2021-02-23T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "298"
+   },
+   {
+    "code": "0063DB",
+    "name": "CALIF CARBON CURRENT AUCTION - ICE FUTURES ENERGY DIV",
+    "first": "2020-03-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "288"
+   },
+   {
+    "code": "0063DD",
+    "name": "RGGI AUCTION CLEARING PRICE - ICE FUTURES ENERGY DIV",
+    "first": "2026-09-01T00:00:00.000",
+    "last": "2026-09-08T00:00:00.000",
+    "n": "2"
+   },
+   {
+    "code": "0063DG",
+    "name": "D4 BIODIESEL RINs OPIS CURR YR - ICE FUTURES ENERGY DIV",
+    "first": "2023-02-28T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "180"
+   },
+   {
+    "code": "0063DK",
+    "name": "CT RECs CLASS 1 - ICE FUTURES ENERGY DIV",
+    "first": "2019-10-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "279"
+   },
+   {
+    "code": "0063DL",
+    "name": "MASS COMPLIANCE RECs CLASS 1 - ICE FUTURES ENERGY DIV",
+    "first": "2019-06-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "387"
+   },
+   {
+    "code": "0063DM",
+    "name": "MARYLAND COMPLIANCE REC TIER1 - ICE FUTURES ENERGY DIV",
+    "first": "2020-10-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "252"
+   },
+   {
+    "code": "0063DN",
+    "name": "MARYLAND SOLAR REC - ICE FUTURES ENERGY DIV",
+    "first": "2019-06-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "320"
+   },
+   {
+    "code": "0063DQ",
+    "name": "NEPOOL DUAL RECs CLASS 1 - ICE FUTURES ENERGY DIV",
+    "first": "2022-12-13T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "152"
+   },
+   {
+    "code": "0063DR",
+    "name": "NJ COMPLIANCE RECs CLASS 1 - ICE FUTURES ENERGY DIV",
+    "first": "2026-06-23T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "20"
+   },
+   {
+    "code": "0063DT",
+    "name": "PA COMPLIANCE AECs TIER1 - ICE FUTURES ENERGY DIV",
+    "first": "2021-05-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "233"
+   },
+   {
+    "code": "0063EA",
+    "name": "WASHINGTON CARBON ALL V2026 - ICE FUTURES ENERGY DIV",
+    "first": "2026-01-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "41"
+   },
+   {
+    "code": "0063EE",
+    "name": "CALIF CARBON ALL VINTAGE 2026 - ICE FUTURES ENERGY DIV",
+    "first": "2024-11-05T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "105"
+   },
+   {
+    "code": "0063EI",
+    "name": "CALIF CARBON ALL VINTAGE 2027 - ICE FUTURES ENERGY DIV",
+    "first": "2026-02-03T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "40"
+   },
+   {
+    "code": "0063EL",
+    "name": "CALIF CARBON ALLOWANCE V2026 - NODAL EXCHANGE",
+    "first": "2026-01-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "40"
+   },
+   {
+    "code": "0063EM",
+    "name": "RGGI V2026 - ICE FUTURES ENERGY DIV",
+    "first": "2025-09-23T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "59"
+   },
+   {
+    "code": "0063F6",
+    "name": "RGGI V2027 - ICE FUTURES ENERGY DIV",
+    "first": "2026-04-28T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "28"
+   },
+   {
+    "code": "006NHT",
+    "name": "TX REC CRS V26 BACK HALF - NODAL EXCHANGE",
+    "first": "2022-09-13T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "217"
+   },
+   {
+    "code": "006NHU",
+    "name": "TX REC CRS V27 BACK HALF - NODAL EXCHANGE",
+    "first": "2023-09-19T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "157"
+   },
+   {
+    "code": "006NHV",
+    "name": "TX REC CRS V28 BACK HALF - NODAL EXCHANGE",
+    "first": "2024-09-03T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "113"
+   },
+   {
+    "code": "006NHW",
+    "name": "TX REC CRS V29 BACK HALF - NODAL EXCHANGE",
+    "first": "2024-08-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "115"
+   },
+   {
+    "code": "006NHX",
+    "name": "TX REC CRS V30 BACK HALF - NODAL EXCHANGE",
+    "first": "2025-04-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "83"
+   },
+   {
+    "code": "006NHY",
+    "name": "TX REC CRS V26 FRONT HALF - NODAL EXCHANGE",
+    "first": "2022-08-30T00:00:00.000",
+    "last": "2026-09-22T00:00:00.000",
+    "n": "213"
+   },
+   {
+    "code": "006NHZ",
+    "name": "TX REC CRS V27 FRONT HALF - NODAL EXCHANGE",
+    "first": "2023-02-28T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "173"
+   },
+   {
+    "code": "006NJ1",
+    "name": "TX REC CRS V28 FRONT HALF - NODAL EXCHANGE",
+    "first": "2024-07-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "115"
+   },
+   {
+    "code": "006NJ2",
+    "name": "TX REC CRS V29 FRONT HALF - NODAL EXCHANGE",
+    "first": "2024-08-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "115"
+   },
+   {
+    "code": "006NJ3",
+    "name": "TX REC CRS V30 FRONT HALF - NODAL EXCHANGE",
+    "first": "2025-03-11T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "87"
+   },
+   {
+    "code": "006NKH",
+    "name": "TX REC CRS V31 BACK HALF - NODAL EXCHANGE",
+    "first": "2026-02-03T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "40"
+   },
+   {
+    "code": "006NKJ",
+    "name": "TX REC CRS V31 FRONT HALF - NODAL EXCHANGE",
+    "first": "2026-02-03T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "27"
+   },
+   {
+    "code": "006NMM",
+    "name": "NEW JERSEY RECs CLASS 2 V2027 - NODAL EXCHANGE",
+    "first": "2025-02-11T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "48"
+   },
+   {
+    "code": "006NMT",
+    "name": "PENNSYLVANIA AEC TIER 2-V2027 - NODAL EXCHANGE",
+    "first": "2025-03-11T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "82"
+   },
+   {
+    "code": "006NMW",
+    "name": "NEW JERSEY RECs CLASS 2 V2028 - NODAL EXCHANGE",
+    "first": "2026-07-14T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "13"
+   },
+   {
+    "code": "006NMX",
+    "name": "PENNSYLVANIA AEC TIER 2-V2028 - NODAL EXCHANGE",
+    "first": "2025-09-23T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "52"
+   },
+   {
+    "code": "006NNO",
+    "name": "PENNSYLVANIA AEC TIER 2-V2029 - NODAL EXCHANGE",
+    "first": "2026-09-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "8"
+   },
+   {
+    "code": "006NOI",
+    "name": "DC SOLAR RECS V2027 - NODAL EXCHANGE",
+    "first": "2026-10-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "2"
+   },
+   {
+    "code": "006NP1",
+    "name": "DC SOLAR RECS V2026 - NODAL EXCHANGE",
+    "first": "2026-09-29T00:00:00.000",
+    "last": "2026-10-20T00:00:00.000",
+    "n": "4"
+   },
+   {
+    "code": "006WCA",
+    "name": "CALIF CARBON VINTAGE SPEC 2029 - ICE FUTURES ENERGY DIV",
+    "first": "2026-09-01T00:00:00.000",
+    "last": "2026-09-22T00:00:00.000",
+    "n": "4"
+   },
+   {
+    "code": "007601",
+    "name": "SOYBEAN OIL - CHICAGO BOARD OF TRADE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1942"
+   },
+   {
+    "code": "020601",
+    "name": "UST BOND - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "020604",
+    "name": "ULTRA UST BOND - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "246"
+   },
+   {
+    "code": "02141B",
+    "name": "USGC HSFO (PLATTS) - ICE FUTURES ENERGY DIV",
+    "first": "2018-02-20T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "455"
+   },
+   {
+    "code": "02141C",
+    "name": "FUEL OIL-3% USGC/3.5% FOB RDAM - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "02141R",
+    "name": "USGC HSFO-PLATTS/BRENT 1ST LN - ICE FUTURES ENERGY DIV",
+    "first": "2019-02-26T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "357"
+   },
+   {
+    "code": "022651",
+    "name": "NY HARBOR ULSD - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "247"
+   },
+   {
+    "code": "022A13",
+    "name": "UP DOWN GC ULSD VS HO SPR - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2016-01-12T00:00:00.000",
+    "last": "2026-09-08T00:00:00.000",
+    "n": "504"
+   },
+   {
+    "code": "023391",
+    "name": "NAT GAS ICE LD1 - ICE FUTURES ENERGY DIV",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "023392",
+    "name": "NAT GAS ICE PEN - ICE FUTURES ENERGY DIV",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "023393",
+    "name": "SOCAL BORDER FIN BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2012-10-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "734"
+   },
+   {
+    "code": "023394",
+    "name": "PG&E CITYGATE FIN BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2012-10-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "734"
+   },
+   {
+    "code": "023395",
+    "name": "NWP ROCKIES FIN BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2012-10-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "734"
+   },
+   {
+    "code": "023396",
+    "name": "AECO FIN BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2012-10-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "734"
+   },
+   {
+    "code": "023397",
+    "name": "CHICAGO FIN BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2012-10-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "734"
+   },
+   {
+    "code": "023398",
+    "name": "HSC FIN BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2012-10-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "734"
+   },
+   {
+    "code": "023399",
+    "name": "WAHA FIN BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2012-10-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "734"
+   },
+   {
+    "code": "02339E",
+    "name": "ALGONQUIN CITYGATES BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "215"
+   },
+   {
+    "code": "02339P",
+    "name": "CG-MAINLINE FINANCIAL INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2020-08-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "127"
+   },
+   {
+    "code": "02339Q",
+    "name": "CHICAGO CITYGATE (INDEX) - ICE FUTURES ENERGY DIV",
+    "first": "2013-05-07T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "598"
+   },
+   {
+    "code": "02339S",
+    "name": "CIG ROCKIES FINANCIAL INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2023-06-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "124"
+   },
+   {
+    "code": "02339U",
+    "name": "CIG ROCKIES BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "02339W",
+    "name": "TCO Basis - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "02339Y",
+    "name": "CG Mainline Basis - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "0233A2",
+    "name": "DOMINION - SOUTH POINT - ICE FUTURES ENERGY DIV",
+    "first": "2013-10-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "551"
+   },
+   {
+    "code": "0233A3",
+    "name": "DOMINION - SOUTH POINT (BASIS) - ICE FUTURES ENERGY DIV",
+    "first": "2013-05-07T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "705"
+   },
+   {
+    "code": "0233A8",
+    "name": "EP SAN JUAN BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "0233A9",
+    "name": "FLORIDA GAS-ZONE 3 BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2025-05-20T00:00:00.000",
+    "last": "2026-09-29T00:00:00.000",
+    "n": "16"
+   },
+   {
+    "code": "0233AG",
+    "name": "HENRY HUB BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "0233AH",
+    "name": "HENRY HUB INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "0233AM",
+    "name": "HOUSTON SHIP CHANNEL (INDEX) - ICE FUTURES ENERGY DIV",
+    "first": "2013-05-07T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "705"
+   },
+   {
+    "code": "0233AN",
+    "name": "MICHCON FINANCIAL INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2017-02-28T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "426"
+   },
+   {
+    "code": "0233AQ",
+    "name": "MICHCON BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "0233AT",
+    "name": "NAT GAS LD1 for GDD -TEXOK - ICE FUTURES ENERGY DIV",
+    "first": "2018-01-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "387"
+   },
+   {
+    "code": "0233AW",
+    "name": "ALGONQUIN CITYGATES INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2022-05-24T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "79"
+   },
+   {
+    "code": "0233AX",
+    "name": "NATURAL GAS INDEX: EP SAN JUAN - ICE FUTURES ENERGY DIV",
+    "first": "2020-10-20T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "20"
+   },
+   {
+    "code": "0233AY",
+    "name": "NGPL MIDCONT BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "179"
+   },
+   {
+    "code": "0233B1",
+    "name": "NGPL TXOK BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "0233BB",
+    "name": "NNG VENTURA BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "0233BC",
+    "name": "NWP SUMAS BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-09-01T00:00:00.000",
+    "n": "119"
+   },
+   {
+    "code": "0233BD",
+    "name": "NWP Rockies Index - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "166"
+   },
+   {
+    "code": "0233BF",
+    "name": "ONEOK GAS TRANSPORTATION BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-09-27T00:00:00.000",
+    "last": "2026-10-27T00:00:00.000",
+    "n": "65"
+   },
+   {
+    "code": "0233BH",
+    "name": "MALIN (BASIS) - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "197"
+   },
+   {
+    "code": "0233BL",
+    "name": "PANHANDLE BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "0233BM",
+    "name": "PANHANDLE INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2022-08-23T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "5"
+   },
+   {
+    "code": "0233BQ",
+    "name": "PG&E - CITYGATE (INDEX) - ICE FUTURES ENERGY DIV",
+    "first": "2013-06-18T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "161"
+   },
+   {
+    "code": "0233BW",
+    "name": "SOCAL (INDEX) - ICE FUTURES ENERGY DIV",
+    "first": "2013-05-07T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "358"
+   },
+   {
+    "code": "0233BY",
+    "name": "SOCAL CITYGATE FINANCIAL BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2018-07-31T00:00:00.000",
+    "last": "2026-09-01T00:00:00.000",
+    "n": "142"
+   },
+   {
+    "code": "0233C1",
+    "name": "SONAT - TIER 1 POOL (ZONE 0) - ICE FUTURES ENERGY DIV",
+    "first": "2013-08-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "244"
+   },
+   {
+    "code": "0233C9",
+    "name": "TENNESSEE 500L BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2025-09-02T00:00:00.000",
+    "last": "2026-08-04T00:00:00.000",
+    "n": "6"
+   },
+   {
+    "code": "0233CC",
+    "name": "TETCO WLA BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2025-07-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "69"
+   },
+   {
+    "code": "0233CF",
+    "name": "TETCO ELA BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2026-08-18T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "4"
+   },
+   {
+    "code": "0233CG",
+    "name": "TETCO M3 INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "249"
+   },
+   {
+    "code": "0233CH",
+    "name": "TETCO M3 BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "0233CM",
+    "name": "TGT ZONE 1 BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "0233CS",
+    "name": "TRANSCO STN 85 MONTHLY INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2017-04-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "217"
+   },
+   {
+    "code": "0233CU",
+    "name": "TRANSCO ZONE 6 BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2013-05-07T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "697"
+   },
+   {
+    "code": "0233CV",
+    "name": "TRANSCO ZONE 6 MONTHLY INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2018-09-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "302"
+   },
+   {
+    "code": "0233CW",
+    "name": "TRANSCO STATION 85-ZONE 4 BASI - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "0233D4",
+    "name": "WAHA INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2022-01-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "249"
+   },
+   {
+    "code": "0233DC",
+    "name": "TGT ZONE 1 INDEX DIFF - ICE FUTURES ENERGY DIV",
+    "first": "2025-12-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "13"
+   },
+   {
+    "code": "0233DR",
+    "name": "TETCO M2 Basis (Receipts) - ICE FUTURES ENERGY DIV",
+    "first": "2015-07-07T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "591"
+   },
+   {
+    "code": "0233DT",
+    "name": "TRANSCO LEIDY BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2017-01-24T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "487"
+   },
+   {
+    "code": "0233DW",
+    "name": "TETCO M2 Index (Receipts) - ICE FUTURES ENERGY DIV",
+    "first": "2018-10-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "251"
+   },
+   {
+    "code": "0233EB",
+    "name": "REX ZONE 3 BASIS - ICE FUTURES ENERGY DIV",
+    "first": "2017-11-28T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "460"
+   },
+   {
+    "code": "0233ED",
+    "name": "REX ZONE 3 INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2019-08-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "233"
+   },
+   {
+    "code": "0233EP",
+    "name": "NAT GAS TETCO-WLA INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2025-12-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "17"
+   },
+   {
+    "code": "0233FJ",
+    "name": "Transco Zone 5 South Basis - ICE FUTURES ENERGY DIV",
+    "first": "2022-05-31T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "228"
+   },
+   {
+    "code": "023651",
+    "name": "NAT GAS NYME - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "023A55",
+    "name": "HENRY HUB LAST DAY FIN - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2011-11-29T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "777"
+   },
+   {
+    "code": "023A56",
+    "name": "HENRY HUB PENULTIMATE FIN - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2012-09-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "683"
+   },
+   {
+    "code": "025608",
+    "name": "ETHANOL T2 FOB INCL DUTY - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2018-12-11T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "405"
+   },
+   {
+    "code": "025651",
+    "name": "ETHANOL - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "026603",
+    "name": "SOYBEAN MEAL - CHICAGO BOARD OF TRADE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1942"
+   },
+   {
+    "code": "033661",
+    "name": "COTTON NO. 2 - ICE FUTURES U.S.",
+    "first": "2007-09-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1001"
+   },
+   {
+    "code": "03565B",
+    "name": "HENRY HUB - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2018-07-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "434"
+   },
+   {
+    "code": "03565C",
+    "name": "HENRY HUB PENULTIMATE NAT GAS - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2018-12-24T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "411"
+   },
+   {
+    "code": "037021",
+    "name": "USD Malaysian Crude Palm Oil C - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-05-24T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "233"
+   },
+   {
+    "code": "039601",
+    "name": "ROUGH RICE - CHICAGO BOARD OF TRADE",
+    "first": "1994-10-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1675"
+   },
+   {
+    "code": "040701",
+    "name": "FRZN CONCENTRATED ORANGE JUICE - ICE FUTURES U.S.",
+    "first": "2007-09-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1001"
+   },
+   {
+    "code": "042601",
+    "name": "UST 2Y NOTE - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "043602",
+    "name": "UST 10Y NOTE - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "043607",
+    "name": "ULTRA UST 10Y - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "04360Y",
+    "name": "MICRO 10 YEAR YIELD - CHICAGO BOARD OF TRADE",
+    "first": "2022-04-12T00:00:00.000",
+    "last": "2026-10-06T00:00:00.000",
+    "n": "170"
+   },
+   {
+    "code": "044601",
+    "name": "UST 5Y NOTE - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "045601",
+    "name": "FED FUNDS - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "047745",
+    "name": "EURO SHORT TERM RATE - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2023-06-13T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "178"
+   },
+   {
+    "code": "050642",
+    "name": "BUTTER (CASH SETTLED) - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2006-05-02T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "888"
+   },
+   {
+    "code": "052641",
+    "name": "MILK, Class III - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2007-01-23T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1033"
+   },
+   {
+    "code": "052642",
+    "name": "NON FAT DRY MILK - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2013-11-19T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "677"
+   },
+   {
+    "code": "052644",
+    "name": "CME MILK IV - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2011-06-28T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "493"
+   },
+   {
+    "code": "052645",
+    "name": "DRY WHEY - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2012-02-14T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "202"
+   },
+   {
+    "code": "054642",
+    "name": "LEAN HOGS - CHICAGO MERCANTILE EXCHANGE",
+    "first": "1996-04-02T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1593"
+   },
+   {
+    "code": "057642",
+    "name": "LIVE CATTLE - CHICAGO MERCANTILE EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1942"
+   },
+   {
+    "code": "058644",
+    "name": "LUMBER - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2023-02-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "192"
+   },
+   {
+    "code": "061641",
+    "name": "FEEDER CATTLE - CHICAGO MERCANTILE EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1942"
+   },
+   {
+    "code": "063642",
+    "name": "CHEESE (CASH-SETTLED) - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2012-02-14T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "769"
+   },
+   {
+    "code": "064391",
+    "name": "MID-C DAY-AHEAD PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-06-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "647"
+   },
+   {
+    "code": "064392",
+    "name": "MID-C DAY-AHEAD OFF-PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-06-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "647"
+   },
+   {
+    "code": "064394",
+    "name": "PJM WESTERN HUB RT OFF - ICE FUTURES ENERGY DIV",
+    "first": "2014-05-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "653"
+   },
+   {
+    "code": "064395",
+    "name": "SP15 FIN DA PEAK FIXED - ICE FUTURES ENERGY DIV",
+    "first": "2013-05-07T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "705"
+   },
+   {
+    "code": "064396",
+    "name": "CAISO SP-15 DA OFF-PK FIXED - ICE FUTURES ENERGY DIV",
+    "first": "2020-06-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "335"
+   },
+   {
+    "code": "06439A",
+    "name": "PJM AEP DAYTON RT OFF-PK FIXED - ICE FUTURES ENERGY DIV",
+    "first": "2020-06-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "335"
+   },
+   {
+    "code": "06439B",
+    "name": "PJM AEP DAYTON RT PEAK FIXED - ICE FUTURES ENERGY DIV",
+    "first": "2015-10-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "576"
+   },
+   {
+    "code": "06439C",
+    "name": "PJM AEP DAYTON HUB DA OFF-PK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "629"
+   },
+   {
+    "code": "06439E",
+    "name": "AEP DAYTON HUB DA PEAK DAILY - ICE FUTURES ENERGY DIV",
+    "first": "2020-07-14T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "65"
+   },
+   {
+    "code": "06439F",
+    "name": "PJM AEP DAYTON DA PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "629"
+   },
+   {
+    "code": "06439K",
+    "name": "MISO INDIANA  OFF-PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2013-11-26T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "676"
+   },
+   {
+    "code": "06439L",
+    "name": "MISO IN. REAL-TIME OFF-PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2013-11-26T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "650"
+   },
+   {
+    "code": "06439N",
+    "name": "ERCOT HOUSTON 345KV RT PK FIX - ICE FUTURES ENERGY DIV",
+    "first": "2017-04-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "424"
+   },
+   {
+    "code": "06439Q",
+    "name": "ERCOT Houston 345KV RT OFF FIX - ICE FUTURES ENERGY DIV",
+    "first": "2020-05-05T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "255"
+   },
+   {
+    "code": "06439R",
+    "name": "ERCOT NORTH 345KV RT PK FIX - ICE FUTURES ENERGY DIV",
+    "first": "2015-10-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "576"
+   },
+   {
+    "code": "06439S",
+    "name": "ERCOT SOUTH 345 KV RT PEAK FIX - ICE FUTURES ENERGY DIV",
+    "first": "2021-03-02T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "284"
+   },
+   {
+    "code": "06439U",
+    "name": "ERCOT-SOUTH MONTHLY OFFPEAK - ICE FUTURES ENERGY DIV",
+    "first": "2020-12-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "290"
+   },
+   {
+    "code": "06439V",
+    "name": "ERCOT WEST 345KV RT PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2020-05-12T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "336"
+   },
+   {
+    "code": "06439W",
+    "name": "ERCOT WEST 345K RT OFF-PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2020-06-02T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "326"
+   },
+   {
+    "code": "0643A5",
+    "name": "ERCOT NORTH 345KV DA PK DLY FI - ICE FUTURES ENERGY DIV",
+    "first": "2018-05-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "132"
+   },
+   {
+    "code": "0643A7",
+    "name": "ERCOT NORTH 345K RT OFFPK DLY - ICE FUTURES ENERGY DIV",
+    "first": "2018-01-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "27"
+   },
+   {
+    "code": "0643A8",
+    "name": "ERCOT - NORTH MONTHLY OFF-PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2013-06-11T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "591"
+   },
+   {
+    "code": "0643AZ",
+    "name": "MISO IN. DAY-AHEAD PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2013-11-26T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "676"
+   },
+   {
+    "code": "0643B3",
+    "name": "MISO INDIANA HUB RT PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "629"
+   },
+   {
+    "code": "0643BC",
+    "name": "PJM N. IL HUB DA OFF-PK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "629"
+   },
+   {
+    "code": "0643BE",
+    "name": "PJM N. IL HUB DA PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "629"
+   },
+   {
+    "code": "0643BF",
+    "name": "ISO NE MASS HUB DA OFF-PK FIXD - ICE FUTURES ENERGY DIV",
+    "first": "2020-06-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "335"
+   },
+   {
+    "code": "0643BG",
+    "name": "ISO NE MASS HUB DA PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "629"
+   },
+   {
+    "code": "0643BM",
+    "name": "CAISO NP-15 PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2013-11-26T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "675"
+   },
+   {
+    "code": "0643BR",
+    "name": "CAISO NP-15 DA OFF-PK FIXED - ICE FUTURES ENERGY DIV",
+    "first": "2020-06-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "335"
+   },
+   {
+    "code": "0643BS",
+    "name": "PJM NI HUB RT OFF-PK FIXED - ICE FUTURES ENERGY DIV",
+    "first": "2020-06-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "335"
+   },
+   {
+    "code": "0643BT",
+    "name": "PJM N. IL HUB RT PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "629"
+   },
+   {
+    "code": "0643BW",
+    "name": "NYISO ZONE J DA PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-28T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "452"
+   },
+   {
+    "code": "0643BX",
+    "name": "NYISO ZONE J DA OFF-PK FIXED - ICE FUTURES ENERGY DIV",
+    "first": "2020-06-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "200"
+   },
+   {
+    "code": "0643BY",
+    "name": "NYISO ZONE A DA PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "620"
+   },
+   {
+    "code": "0643BZ",
+    "name": "NYISO ZONE A DA OFF-PK FIX PR - ICE FUTURES ENERGY DIV",
+    "first": "2020-06-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "307"
+   },
+   {
+    "code": "0643C3",
+    "name": "NYISO ZONE G DA PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "629"
+   },
+   {
+    "code": "0643C4",
+    "name": "NYISO ZONE G DA OFF-PK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "629"
+   },
+   {
+    "code": "0643CB",
+    "name": "PALO VERDE DA PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "625"
+   },
+   {
+    "code": "0643CC",
+    "name": "PALO VERDE DA OFF-PK FiXED PR - ICE FUTURES ENERGY DIV",
+    "first": "2020-06-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "318"
+   },
+   {
+    "code": "0643DB",
+    "name": "PJM WESTERN HUB DA OFF-PK - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "629"
+   },
+   {
+    "code": "0643DC",
+    "name": "PJM WESTERN HUB DA PEAK - ICE FUTURES ENERGY DIV",
+    "first": "2014-07-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "643"
+   },
+   {
+    "code": "0643DF",
+    "name": "PJM WESTERN HUB RT PEAK MINI - ICE FUTURES ENERGY DIV",
+    "first": "2014-10-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "629"
+   },
+   {
+    "code": "0643DN",
+    "name": "S PATH 15 EZ GEN HUB DA DLY OP - ICE FUTURES ENERGY DIV",
+    "first": "2026-08-25T00:00:00.000",
+    "last": "2026-09-01T00:00:00.000",
+    "n": "2"
+   },
+   {
+    "code": "0643F9",
+    "name": "MISO ARKANSAS DA PEAK FIXED - ICE FUTURES ENERGY DIV",
+    "first": "2024-08-27T00:00:00.000",
+    "last": "2026-10-06T00:00:00.000",
+    "n": "43"
+   },
+   {
+    "code": "0643HS",
+    "name": "CAISO SP-15 PEAK 0900-1600 HE - ICE FUTURES ENERGY DIV",
+    "first": "2025-05-20T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "64"
+   },
+   {
+    "code": "0643IA",
+    "name": "PJM WEST HUB REAL TIME PK MINI - ICE FUTURES ENERGY DIV",
+    "first": "2023-08-15T00:00:00.000",
+    "last": "2026-10-13T00:00:00.000",
+    "n": "47"
+   },
+   {
+    "code": "0643IB",
+    "name": "ERCOT N 345KV REAL T PK DALY M - ICE FUTURES ENERGY DIV",
+    "first": "2019-08-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "289"
+   },
+   {
+    "code": "0643ID",
+    "name": "ERCOT N 345KV REAL T PK 2x16 - ICE FUTURES ENERGY DIV",
+    "first": "2019-09-03T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "368"
+   },
+   {
+    "code": "0643IK",
+    "name": "ERCOT North 345KV Hub RT 7x8 - ICE FUTURES ENERGY DIV",
+    "first": "2021-03-23T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "294"
+   },
+   {
+    "code": "0643IL",
+    "name": "ERCOT Houston 345KV Hub RT 7x8 - ICE FUTURES ENERGY DIV",
+    "first": "2023-10-03T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "114"
+   },
+   {
+    "code": "064AAA",
+    "name": "ISONE.H.INTERNAL_HUB_mo_on_dap - NODAL EXCHANGE",
+    "first": "2022-02-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "249"
+   },
+   {
+    "code": "064AAB",
+    "name": "ISONE.H.INTERNAL_HB_mo_off_dap - NODAL EXCHANGE",
+    "first": "2022-02-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "246"
+   },
+   {
+    "code": "064BFI",
+    "name": "MISO.INDIANA.HUB_month_on_dap - NODAL EXCHANGE",
+    "first": "2013-12-10T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "492"
+   },
+   {
+    "code": "064BFJ",
+    "name": "MISO.INDIANA.HUB_month_off_dap - NODAL EXCHANGE",
+    "first": "2013-12-10T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "393"
+   },
+   {
+    "code": "064CTQ",
+    "name": "NYISO.CENTRL_month_on_dap - NODAL EXCHANGE",
+    "first": "2020-05-19T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "148"
+   },
+   {
+    "code": "064CTR",
+    "name": "NYISO.CENTRL_month_off_dap - NODAL EXCHANGE",
+    "first": "2023-06-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "72"
+   },
+   {
+    "code": "064CXO",
+    "name": "NYISO.HUD VL_month_on_dap - NODAL EXCHANGE",
+    "first": "2016-12-20T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "396"
+   },
+   {
+    "code": "064CXP",
+    "name": "NYISO.HUD VL_month_off_dap - NODAL EXCHANGE",
+    "first": "2017-10-10T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "383"
+   },
+   {
+    "code": "064CZS",
+    "name": "NYISO.N.Y.C._month_on_dap - NODAL EXCHANGE",
+    "first": "2020-06-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "264"
+   },
+   {
+    "code": "064CZT",
+    "name": "NYISO.N.Y.C._month_off_dap - NODAL EXCHANGE",
+    "first": "2020-06-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "172"
+   },
+   {
+    "code": "064DEU",
+    "name": "NYISO.WEST_month_on_dap - NODAL EXCHANGE",
+    "first": "2019-09-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "285"
+   },
+   {
+    "code": "064DEV",
+    "name": "NYISO.WEST_month_off_dap - NODAL EXCHANGE",
+    "first": "2020-03-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "185"
+   },
+   {
+    "code": "064DLQ",
+    "name": "PJM.AEP_month_on_dap - NODAL EXCHANGE",
+    "first": "2024-10-29T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "103"
+   },
+   {
+    "code": "064DLR",
+    "name": "PJM.AEP_month_off_dap - NODAL EXCHANGE",
+    "first": "2025-02-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "91"
+   },
+   {
+    "code": "064DLW",
+    "name": "PJM.AEP-DAYTON HUB_mo_on_dap - NODAL EXCHANGE",
+    "first": "2022-02-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "249"
+   },
+   {
+    "code": "064DLX",
+    "name": "PJM.AEP-DAYTON HUB_mo_off_dap - NODAL EXCHANGE",
+    "first": "2022-02-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "249"
+   },
+   {
+    "code": "064DMY",
+    "name": "PJM.APS_month_on_dap - NODAL EXCHANGE",
+    "first": "2025-11-18T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "51"
+   },
+   {
+    "code": "064DMZ",
+    "name": "PJM.APS_month_off_dap - NODAL EXCHANGE",
+    "first": "2023-12-19T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "67"
+   },
+   {
+    "code": "064DPQ",
+    "name": "PJM.BGE_month_on_dap - NODAL EXCHANGE",
+    "first": "2013-12-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "637"
+   },
+   {
+    "code": "064DPR",
+    "name": "PJM.BGE_month_off_dap - NODAL EXCHANGE",
+    "first": "2014-04-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "570"
+   },
+   {
+    "code": "064DZS",
+    "name": "PJM.DOM_month_on_dap - NODAL EXCHANGE",
+    "first": "2023-11-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "133"
+   },
+   {
+    "code": "064DZT",
+    "name": "PJM.DOM_month_off_dap - NODAL EXCHANGE",
+    "first": "2023-08-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "148"
+   },
+   {
+    "code": "064ED7",
+    "name": "ERCOT North 345KV Hub RT 10x17 - ICE FUTURES ENERGY DIV",
+    "first": "2026-07-14T00:00:00.000",
+    "last": "2026-09-08T00:00:00.000",
+    "n": "9"
+   },
+   {
+    "code": "064EJI",
+    "name": "PJM.JCPL_month_on_dap - NODAL EXCHANGE",
+    "first": "2014-04-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "348"
+   },
+   {
+    "code": "064EJJ",
+    "name": "PJM.JCPL_month_off_dap - NODAL EXCHANGE",
+    "first": "2019-04-02T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "285"
+   },
+   {
+    "code": "064EOW",
+    "name": "PJM.METED_month_on_dap - NODAL EXCHANGE",
+    "first": "2022-03-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "177"
+   },
+   {
+    "code": "064EOX",
+    "name": "PJM.METED_month_off_dap - NODAL EXCHANGE",
+    "first": "2022-03-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "144"
+   },
+   {
+    "code": "064ERM",
+    "name": "PJM.N ILLINOIS HUB_mo_on_dap - NODAL EXCHANGE",
+    "first": "2022-02-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "249"
+   },
+   {
+    "code": "064ERN",
+    "name": "PJM.N ILLINOIS HUB_mo_off_dap - NODAL EXCHANGE",
+    "first": "2022-02-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "249"
+   },
+   {
+    "code": "064EUY",
+    "name": "PJM.PECO_month_on_dap - NODAL EXCHANGE",
+    "first": "2015-02-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "573"
+   },
+   {
+    "code": "064EUZ",
+    "name": "PJM.PECO_month_off_dap - NODAL EXCHANGE",
+    "first": "2015-05-26T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "550"
+   },
+   {
+    "code": "064EVA",
+    "name": "PJM.PENELEC_month_on_dap - NODAL EXCHANGE",
+    "first": "2023-02-14T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "164"
+   },
+   {
+    "code": "064EVB",
+    "name": "PJM.PENELEC_month_off_dap - NODAL EXCHANGE",
+    "first": "2023-02-21T00:00:00.000",
+    "last": "2026-10-27T00:00:00.000",
+    "n": "155"
+   },
+   {
+    "code": "064EVG",
+    "name": "PJM.PEPCO_month_on_dap - NODAL EXCHANGE",
+    "first": "2014-01-14T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "565"
+   },
+   {
+    "code": "064EVH",
+    "name": "PJM.PEPCO_month_off_dap - NODAL EXCHANGE",
+    "first": "2014-02-11T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "441"
+   },
+   {
+    "code": "064EWU",
+    "name": "PJM.PPL_month_on_dap - NODAL EXCHANGE",
+    "first": "2015-12-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "544"
+   },
+   {
+    "code": "064EWV",
+    "name": "PJM.PPL_month_off_dap - NODAL EXCHANGE",
+    "first": "2015-12-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "543"
+   },
+   {
+    "code": "064EXE",
+    "name": "PJM PSEG DAP - NODAL EXCHANGE",
+    "first": "2026-04-14T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "30"
+   },
+   {
+    "code": "064EXF",
+    "name": "PJM.PSEG_month_off_dap - NODAL EXCHANGE",
+    "first": "2013-12-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "607"
+   },
+   {
+    "code": "064FHK",
+    "name": "PJM.WESTERN HUB DAP - NODAL EXCHANGE",
+    "first": "2026-04-14T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "30"
+   },
+   {
+    "code": "064FHL",
+    "name": "PJM.WESTERN HUB_month_off_dap - NODAL EXCHANGE",
+    "first": "2014-01-14T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "667"
+   },
+   {
+    "code": "064FJY",
+    "name": "MISO.INDIANA.HUB_month_on_rtp - NODAL EXCHANGE",
+    "first": "2014-07-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "144"
+   },
+   {
+    "code": "064FJZ",
+    "name": "MISO.INDIANA.HUB_month_off_rtp - NODAL EXCHANGE",
+    "first": "2023-12-12T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "118"
+   },
+   {
+    "code": "064FKA",
+    "name": "PJM.AEP-DAYTON HUB_mo_on_rtp - NODAL EXCHANGE",
+    "first": "2022-02-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "249"
+   },
+   {
+    "code": "064FKB",
+    "name": "PJM.AEP-DAYTON HUB_mo_off_rtp - NODAL EXCHANGE",
+    "first": "2022-02-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "249"
+   },
+   {
+    "code": "064FKC",
+    "name": "PJM.N ILLINOIS HUB_mo_on_rtp - NODAL EXCHANGE",
+    "first": "2022-02-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "249"
+   },
+   {
+    "code": "064FKD",
+    "name": "PJM.N ILLINOIS HUB_mo_off_rtp - NODAL EXCHANGE",
+    "first": "2022-02-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "249"
+   },
+   {
+    "code": "064FKE",
+    "name": "PJM.WESTERN HUB_month_on_rtp - NODAL EXCHANGE",
+    "first": "2014-01-14T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "667"
+   },
+   {
+    "code": "064FKF",
+    "name": "PJM.WESTERN HUB_month_off_rtp - NODAL EXCHANGE",
+    "first": "2013-12-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "670"
+   },
+   {
+    "code": "064FOK",
+    "name": "ERCOT.HB_NORTH_month_on_rtp - NODAL EXCHANGE",
+    "first": "2021-08-31T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "221"
+   },
+   {
+    "code": "064FOL",
+    "name": "ERCOT.HB_NORTH_month_off_rtp - NODAL EXCHANGE",
+    "first": "2022-11-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "208"
+   },
+   {
+    "code": "064FOM",
+    "name": "ERCOT.HB_SOUTH_month_on_rtp - NODAL EXCHANGE",
+    "first": "2026-10-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "2"
+   },
+   {
+    "code": "064FON",
+    "name": "ERCOT.HB_SOUTH_month_off_rtp - NODAL EXCHANGE",
+    "first": "2026-10-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "2"
+   },
+   {
+    "code": "064FOO",
+    "name": "ERCOT.HB_WEST_month_on_rtp - NODAL EXCHANGE",
+    "first": "2026-10-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "2"
+   },
+   {
+    "code": "064FOP",
+    "name": "ERCOT.HB_WEST_month_off_rtp - NODAL EXCHANGE",
+    "first": "2026-10-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "2"
+   },
+   {
+    "code": "064FWW",
+    "name": "PJM.FE OHIO_month_on_dap - NODAL EXCHANGE",
+    "first": "2023-04-18T00:00:00.000",
+    "last": "2026-10-27T00:00:00.000",
+    "n": "11"
+   },
+   {
+    "code": "064FZA",
+    "name": "PJM.ATSI_month_on_dap - NODAL EXCHANGE",
+    "first": "2013-12-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "134"
+   },
+   {
+    "code": "064FZB",
+    "name": "PJM.ATSI_month_off_dap - NODAL EXCHANGE",
+    "first": "2014-01-28T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "104"
+   },
+   {
+    "code": "064GBC",
+    "name": "ERCOT.HB_NORTH_month_2x16_rtp - NODAL EXCHANGE",
+    "first": "2026-09-22T00:00:00.000",
+    "last": "2026-10-06T00:00:00.000",
+    "n": "3"
+   },
+   {
+    "code": "064GBD",
+    "name": "ERCOT.HB_NORTH_month_7x8_rtp - NODAL EXCHANGE",
+    "first": "2025-04-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "84"
+   },
+   {
+    "code": "064IBM",
+    "name": "ERCOT North 345KV Hub RT 7x16 - ICE FUTURES ENERGY DIV",
+    "first": "2022-11-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "200"
+   },
+   {
+    "code": "066391",
+    "name": "PROPANE ARGUS CIF ARA MINI - ICE FUTURES ENERGY DIV",
+    "first": "2021-12-28T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "105"
+   },
+   {
+    "code": "066393",
+    "name": "PROPANE ARGUS FAR EAST MINI - ICE FUTURES ENERGY DIV",
+    "first": "2021-04-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "275"
+   },
+   {
+    "code": "066397",
+    "name": "BUTANE,OPIS MT B, NONTET FIX - ICE FUTURES ENERGY DIV",
+    "first": "2026-01-13T00:00:00.000",
+    "last": "2026-10-27T00:00:00.000",
+    "n": "14"
+   },
+   {
+    "code": "06639H",
+    "name": "PROPANE ARGUS SAUDI CP MINI - ICE FUTURES ENERGY DIV",
+    "first": "2025-04-15T00:00:00.000",
+    "last": "2026-10-27T00:00:00.000",
+    "n": "48"
+   },
+   {
+    "code": "06639W",
+    "name": "PROPANE,OPIS MT B TET/AFEI - ICE FUTURES ENERGY DIV",
+    "first": "2026-01-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "24"
+   },
+   {
+    "code": "06639Z",
+    "name": "PROPANE,OPIS MT BELV TET BALMO - ICE FUTURES ENERGY DIV",
+    "first": "2021-01-26T00:00:00.000",
+    "last": "2026-09-29T00:00:00.000",
+    "n": "88"
+   },
+   {
+    "code": "066411",
+    "name": "ARGUS CIF ARA Lg Finl Propane - ICE FUTURES ENERGY DIV",
+    "first": "2019-07-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "133"
+   },
+   {
+    "code": "066413",
+    "name": "ARGUS FAR EAST PROPANE - ICE FUTURES ENERGY DIV",
+    "first": "2018-12-24T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "411"
+   },
+   {
+    "code": "066416",
+    "name": "ETHANE, MT. BELV-ENTERPRISE - ICE FUTURES ENERGY DIV",
+    "first": "2018-02-20T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "455"
+   },
+   {
+    "code": "066418",
+    "name": "ISOBUTANE OPIS MT BELV NONTET - ICE FUTURES ENERGY DIV",
+    "first": "2025-07-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "50"
+   },
+   {
+    "code": "06641A",
+    "name": "NAT GASLNE OPIS MT B NONTET FP - ICE FUTURES ENERGY DIV",
+    "first": "2018-02-20T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "455"
+   },
+   {
+    "code": "06641D",
+    "name": "BUTANE OPIS MT BELV NONTET FP - ICE FUTURES ENERGY DIV",
+    "first": "2018-02-20T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "455"
+   },
+   {
+    "code": "06641E",
+    "name": "PROPANE OPIS CONWAY INWELL FP - ICE FUTURES ENERGY DIV",
+    "first": "2020-09-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "310"
+   },
+   {
+    "code": "06641F",
+    "name": "PROPANE OPIS MT BELV NONTET FP - ICE FUTURES ENERGY DIV",
+    "first": "2018-02-20T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "455"
+   },
+   {
+    "code": "06641G",
+    "name": "PROPANE OPIS MT BELVIEU TET FP - ICE FUTURES ENERGY DIV",
+    "first": "2018-02-20T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "455"
+   },
+   {
+    "code": "06641H",
+    "name": "PROPANE ARGUS SAUDI CP FP - ICE FUTURES ENERGY DIV",
+    "first": "2018-09-18T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "343"
+   },
+   {
+    "code": "06665B",
+    "name": "ARGUS PROPANE FAR EAST INDEX - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2016-06-28T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "489"
+   },
+   {
+    "code": "06665G",
+    "name": "PROPANE NON-LDH MT BEL - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2018-12-24T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "411"
+   },
+   {
+    "code": "06665O",
+    "name": "PROPANE - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "06665P",
+    "name": "MT BELVIEU ETHANE OPIS - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2016-02-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "560"
+   },
+   {
+    "code": "06665Q",
+    "name": "MT BELV NORM BUTANE OPIS - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2016-01-12T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "565"
+   },
+   {
+    "code": "06665R",
+    "name": "MT BELV NAT GASOLINE OPIS - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2018-12-24T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "411"
+   },
+   {
+    "code": "06665T",
+    "name": "CONWAY PROPANE (OPIS) - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2016-01-12T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "565"
+   },
+   {
+    "code": "06739C",
+    "name": "CRUDE DIFF-WCS HOUSTON/WTI 1ST - ICE FUTURES ENERGY DIV",
+    "first": "2020-11-03T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "313"
+   },
+   {
+    "code": "067411",
+    "name": "CRUDE OIL, LIGHT SWEET-WTI - ICE FUTURES EUROPE",
+    "first": "2014-04-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "658"
+   },
+   {
+    "code": "06741Q",
+    "name": "WTI CRUDE OIL 1ST LINE - ICE FUTURES ENERGY DIV",
+    "first": "2019-07-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "59"
+   },
+   {
+    "code": "06742G",
+    "name": "CRUDE DIFF-TMX WCS 1A INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2018-02-20T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "455"
+   },
+   {
+    "code": "06742T",
+    "name": "CRUDE DIFF-TMX SW 1A INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2019-04-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "369"
+   },
+   {
+    "code": "06743A",
+    "name": "CONDENSATE DIF-TMX C5 1A INDEX - ICE FUTURES ENERGY DIV",
+    "first": "2022-05-10T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "204"
+   },
+   {
+    "code": "067651",
+    "name": "WTI-PHYSICAL - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "06765A",
+    "name": "WTI FINANCIAL CRUDE OIL - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2019-03-26T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "398"
+   },
+   {
+    "code": "06765T",
+    "name": "BRENT LAST DAY - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "0676A5",
+    "name": "WTI  HOUSTON ARGUS/WTI TR MO - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2018-01-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "431"
+   },
+   {
+    "code": "0676A6",
+    "name": "WTI  HOUSTON ARGUS/WTI BALMO - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2025-10-21T00:00:00.000",
+    "last": "2026-10-27T00:00:00.000",
+    "n": "19"
+   },
+   {
+    "code": "067A71",
+    "name": "WTI MIDLAND ARGUS VS WTI TRADE - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2018-03-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "409"
+   },
+   {
+    "code": "073732",
+    "name": "COCOA - ICE FUTURES U.S.",
+    "first": "2007-09-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1001"
+   },
+   {
+    "code": "075651",
+    "name": "PALLADIUM - NEW YORK MERCANTILE EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1867"
+   },
+   {
+    "code": "076651",
+    "name": "PLATINUM - NEW YORK MERCANTILE EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1941"
+   },
+   {
+    "code": "080732",
+    "name": "SUGAR NO. 11 - ICE FUTURES U.S.",
+    "first": "2007-09-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1001"
+   },
+   {
+    "code": "083731",
+    "name": "COFFEE C - ICE FUTURES U.S.",
+    "first": "2007-09-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1001"
+   },
+   {
+    "code": "084691",
+    "name": "SILVER - COMMODITY EXCHANGE INC.",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1941"
+   },
+   {
+    "code": "084694",
+    "name": "MICRO SILVER - COMMODITY EXCHANGE INC.",
+    "first": "2026-01-13T00:00:00.000",
+    "last": "2026-10-20T00:00:00.000",
+    "n": "7"
+   },
+   {
+    "code": "085692",
+    "name": "COPPER- #1 - COMMODITY EXCHANGE INC.",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "088691",
+    "name": "GOLD - COMMODITY EXCHANGE INC.",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1941"
+   },
+   {
+    "code": "088695",
+    "name": "MICRO GOLD - COMMODITY EXCHANGE INC.",
+    "first": "2020-12-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "170"
+   },
+   {
+    "code": "088LM1",
+    "name": "GOLD -1 TROY OUNCE - COINBASE DERIVATIVES, LLC",
+    "first": "2025-12-30T00:00:00.000",
+    "last": "2026-09-08T00:00:00.000",
+    "n": "6"
+   },
+   {
+    "code": "090741",
+    "name": "CANADIAN DOLLAR - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2000-08-29T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1367"
+   },
+   {
+    "code": "092741",
+    "name": "SWISS FRANC - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2000-08-29T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1365"
+   },
+   {
+    "code": "095741",
+    "name": "MEXICAN PESO - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2000-08-29T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1367"
+   },
+   {
+    "code": "096742",
+    "name": "BRITISH POUND - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "097741",
+    "name": "JAPANESE YEN - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2000-08-29T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1367"
+   },
+   {
+    "code": "098662",
+    "name": "USD INDEX - ICE FUTURES U.S.",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "099741",
+    "name": "EURO FX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2000-08-29T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1367"
+   },
+   {
+    "code": "102741",
+    "name": "BRAZILIAN REAL - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2011-04-05T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "758"
+   },
+   {
+    "code": "111415",
+    "name": "GASOLINE CRK-RBOB/BRENT 1st - ICE FUTURES ENERGY DIV",
+    "first": "2018-05-15T00:00:00.000",
+    "last": "2026-08-25T00:00:00.000",
+    "n": "122"
+   },
+   {
+    "code": "111659",
+    "name": "GASOLINE RBOB - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "111A34",
+    "name": "GULF COAST CBOB GAS A2 PL RBOB - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2019-04-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "112741",
+    "name": "NZ DOLLAR - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "1170E1",
+    "name": "VIX FUTURES - CBOE FUTURES EXCHANGE",
+    "first": "2004-07-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1120"
+   },
+   {
+    "code": "122741",
+    "name": "SO AFRICAN RAND - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "12460+",
+    "name": "DJIA Consolidated - CHICAGO BOARD OF TRADE",
+    "first": "2010-06-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "856"
+   },
+   {
+    "code": "124603",
+    "name": "DJIA x $5 - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "124606",
+    "name": "DOW JONES U.S. REAL ESTATE IDX - CHICAGO BOARD OF TRADE",
+    "first": "2018-01-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "443"
+   },
+   {
+    "code": "124608",
+    "name": "MICRO E-MINI DJIA (x$0.5) - CHICAGO BOARD OF TRADE",
+    "first": "2022-07-26T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "87"
+   },
+   {
+    "code": "133741",
+    "name": "BITCOIN - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2018-04-10T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "448"
+   },
+   {
+    "code": "133742",
+    "name": "MICRO BITCOIN - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2021-05-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "288"
+   },
+   {
+    "code": "133LM1",
+    "name": "Nano Bitcoin - COINBASE DERIVATIVES, LLC",
+    "first": "2025-07-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "68"
+   },
+   {
+    "code": "133LM4",
+    "name": "NANO BITCOIN PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2025-07-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "68"
+   },
+   {
+    "code": "133LM5",
+    "name": "BITCOIN CASH PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-01-13T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "26"
+   },
+   {
+    "code": "134741",
+    "name": "SOFR-3M - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "134742",
+    "name": "SOFR-1M - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "134FM1",
+    "name": "SOFR-3M - FMX FUTURES EXCHANGE",
+    "first": "2026-08-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "9"
+   },
+   {
+    "code": "135731",
+    "name": "CANOLA - ICE FUTURES U.S.",
+    "first": "2018-08-07T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "431"
+   },
+   {
+    "code": "13874+",
+    "name": "S&P 500 Consolidated - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2010-06-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "856"
+   },
+   {
+    "code": "138748",
+    "name": "E-MINI S&P CONSU STAPLES INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2017-09-12T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "310"
+   },
+   {
+    "code": "138749",
+    "name": "E-MINI S&P ENERGY INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2017-12-05T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "426"
+   },
+   {
+    "code": "13874A",
+    "name": "E-MINI S&P 500 - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "13874C",
+    "name": "E-MINI S&P FINANCIAL INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2017-05-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "437"
+   },
+   {
+    "code": "13874E",
+    "name": "E-MINI S&P HEALTH CARE INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2017-06-13T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "236"
+   },
+   {
+    "code": "13874F",
+    "name": "E-MINI S&P INDUSTRIAL INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2018-08-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "167"
+   },
+   {
+    "code": "13874H",
+    "name": "E-MINI S&P MATERIALS INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2018-10-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "61"
+   },
+   {
+    "code": "13874I",
+    "name": "E-MINI S&P TECHNOLOGY INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2017-12-12T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "190"
+   },
+   {
+    "code": "13874J",
+    "name": "E-MINI S&P UTILITIES INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2017-06-13T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "426"
+   },
+   {
+    "code": "13874P",
+    "name": "E-MINI S&P COMMUNICATION INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2024-02-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "78"
+   },
+   {
+    "code": "13874U",
+    "name": "MICRO E-MINI S&P 500 INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2020-07-28T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "282"
+   },
+   {
+    "code": "13874W",
+    "name": "ADJUSTED INT RATE S&P 500 TOTL - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-03-29T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "236"
+   },
+   {
+    "code": "138LM1",
+    "name": "TECH100 INDEX PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-10-20T00:00:00.000",
+    "last": "2026-10-27T00:00:00.000",
+    "n": "2"
+   },
+   {
+    "code": "146021",
+    "name": "ETHER CASH SETTLED - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2021-04-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "292"
+   },
+   {
+    "code": "146022",
+    "name": "MICRO ETHER - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2021-12-14T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "256"
+   },
+   {
+    "code": "146LM1",
+    "name": "NANO ETHER - COINBASE DERIVATIVES, LLC",
+    "first": "2025-07-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "68"
+   },
+   {
+    "code": "146LM3",
+    "name": "NANO ETHER PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2025-07-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "68"
+   },
+   {
+    "code": "167LM1",
+    "name": "LITECOIN PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-01-13T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "43"
+   },
+   {
+    "code": "168DC1",
+    "name": "DOGECOIN - COINBASE DERIVATIVES, LLC",
+    "first": "2025-07-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "43"
+   },
+   {
+    "code": "168LM2",
+    "name": "DOGECOIN PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-01-13T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "40"
+   },
+   {
+    "code": "169LM2",
+    "name": "POLKADOT PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-01-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "43"
+   },
+   {
+    "code": "170LM2",
+    "name": "CHAINLINK PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2025-12-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "45"
+   },
+   {
+    "code": "171LM1",
+    "name": "AVALANCHE - COINBASE DERIVATIVES, LLC",
+    "first": "2025-07-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "49"
+   },
+   {
+    "code": "171LM2",
+    "name": "AVALANCHE PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2025-12-23T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "46"
+   },
+   {
+    "code": "172LM2",
+    "name": "1K SHIB PERP - COINBASE DERIVATIVES, LLC",
+    "first": "2026-01-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "43"
+   },
+   {
+    "code": "173LM2",
+    "name": "STELLAR PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-04-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "29"
+   },
+   {
+    "code": "174LM1",
+    "name": "CARDONA - COINBASE DERIVATIVES, LLC",
+    "first": "2025-07-22T00:00:00.000",
+    "last": "2026-10-27T00:00:00.000",
+    "n": "30"
+   },
+   {
+    "code": "174LM2",
+    "name": "CARDONA PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2025-12-23T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "46"
+   },
+   {
+    "code": "176740",
+    "name": "XRP - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2025-07-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "65"
+   },
+   {
+    "code": "176LM1",
+    "name": "NANO XRP - COINBASE DERIVATIVES, LLC",
+    "first": "2025-07-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "68"
+   },
+   {
+    "code": "176LM2",
+    "name": "XRP - COINBASE DERIVATIVES, LLC",
+    "first": "2026-08-25T00:00:00.000",
+    "last": "2026-10-27T00:00:00.000",
+    "n": "6"
+   },
+   {
+    "code": "176LM3",
+    "name": "NANO XRP PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2025-08-19T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "64"
+   },
+   {
+    "code": "177741",
+    "name": "SOL - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2025-07-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "68"
+   },
+   {
+    "code": "177742",
+    "name": "MICRO SOL - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2025-08-26T00:00:00.000",
+    "last": "2026-10-27T00:00:00.000",
+    "n": "40"
+   },
+   {
+    "code": "177LM1",
+    "name": "NANO SOLANA - COINBASE DERIVATIVES, LLC",
+    "first": "2025-07-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "68"
+   },
+   {
+    "code": "177LM3",
+    "name": "NANO SOLANA PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2025-08-19T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "64"
+   },
+   {
+    "code": "180LM2",
+    "name": "SUI - COINBASE DERIVATIVES, LLC",
+    "first": "2026-07-28T00:00:00.000",
+    "last": "2026-10-27T00:00:00.000",
+    "n": "5"
+   },
+   {
+    "code": "180LM3",
+    "name": "SUI PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-01-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "44"
+   },
+   {
+    "code": "180LM4",
+    "name": "HEDERA PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-02-10T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "39"
+   },
+   {
+    "code": "180LM5",
+    "name": "AAVE PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-08-11T00:00:00.000",
+    "last": "2026-09-15T00:00:00.000",
+    "n": "4"
+   },
+   {
+    "code": "180LM6",
+    "name": "ETHENA PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-09-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "7"
+   },
+   {
+    "code": "180LM7",
+    "name": "NEAR PROTOCAL PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-05-26T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "24"
+   },
+   {
+    "code": "180LM8",
+    "name": "ONDO PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-03-31T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "31"
+   },
+   {
+    "code": "180LM9",
+    "name": "PAX GOLD PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-07-21T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "12"
+   },
+   {
+    "code": "180LMA",
+    "name": "1K PEPE PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-10-20T00:00:00.000",
+    "last": "2026-10-20T00:00:00.000",
+    "n": "1"
+   },
+   {
+    "code": "180LMB",
+    "name": "ZCASH PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-03-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "34"
+   },
+   {
+    "code": "183LM2",
+    "name": "CRYPTO HYPE PERP STYLE - COINBASE DERIVATIVES, LLC",
+    "first": "2026-06-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "21"
+   },
+   {
+    "code": "188691",
+    "name": "COBALT - COMMODITY EXCHANGE INC.",
+    "first": "2022-11-22T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "206"
+   },
+   {
+    "code": "189691",
+    "name": "LITHIUM HYDROXIDE - COMMODITY EXCHANGE INC.",
+    "first": "2023-08-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "169"
+   },
+   {
+    "code": "191693",
+    "name": "ALUMINUM MWP - COMMODITY EXCHANGE INC.",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "191696",
+    "name": "ALUMINIUM EURO PREM DUTY-PAID - COMMODITY EXCHANGE INC.",
+    "first": "2020-09-29T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "288"
+   },
+   {
+    "code": "192651",
+    "name": "STEEL-HRC - COMMODITY EXCHANGE INC.",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "192691",
+    "name": "NORTH EURO HOT-ROLL COIL STEEL - COMMODITY EXCHANGE INC.",
+    "first": "2024-04-09T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "125"
+   },
+   {
+    "code": "20974+",
+    "name": "NASDAQ-100 Consolidated - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2010-06-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "856"
+   },
+   {
+    "code": "209742",
+    "name": "NASDAQ MINI - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "209747",
+    "name": "MICRO E-MINI NASDAQ-100 INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2020-08-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "312"
+   },
+   {
+    "code": "221602",
+    "name": "BBG COMMODITY - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "221605",
+    "name": "BLOOMBERG HY CREDIT FUTURES - CHICAGO BOARD OF TRADE",
+    "first": "2026-03-31T00:00:00.000",
+    "last": "2026-09-15T00:00:00.000",
+    "n": "24"
+   },
+   {
+    "code": "221606",
+    "name": "BLOOMBERG IG CREDIT FUTURES - CHICAGO BOARD OF TRADE",
+    "first": "2026-05-05T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "27"
+   },
+   {
+    "code": "221607",
+    "name": "BLOOMBERG IG DURATION-HEDGED - CHICAGO BOARD OF TRADE",
+    "first": "2026-06-02T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "9"
+   },
+   {
+    "code": "232741",
+    "name": "AUSTRALIAN DOLLAR - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2004-01-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1191"
+   },
+   {
+    "code": "239742",
+    "name": "RUSSELL E-MINI - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "239744",
+    "name": "EMINI RUSSELL 1000 VALUE INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2018-02-20T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "318"
+   },
+   {
+    "code": "239747",
+    "name": "MICRO E-MINI RUSSELL 2000 INDX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2021-11-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "146"
+   },
+   {
+    "code": "239750",
+    "name": "RUSSELL 2000 ANNUAL DIVIDEND - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2025-03-25T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "67"
+   },
+   {
+    "code": "240743",
+    "name": "NIKKEI STOCK AVERAGE YEN DENOM - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2004-11-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1126"
+   },
+   {
+    "code": "244041",
+    "name": "MSCI EAFE - ICE FUTURES U.S.",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "244042",
+    "name": "MSCI EM INDEX - ICE FUTURES U.S.",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "251607",
+    "name": "UREA (GRANULAR) FOB US GULF - CHICAGO BOARD OF TRADE",
+    "first": "2020-02-11T00:00:00.000",
+    "last": "2026-10-06T00:00:00.000",
+    "n": "47"
+   },
+   {
+    "code": "299741",
+    "name": "EURO FX/BRITISH POUND XRATE - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2014-06-10T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "532"
+   },
+   {
+    "code": "33874A",
+    "name": "E-MINI S&P 400 STOCK INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2002-11-05T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1250"
+   },
+   {
+    "code": "342603",
+    "name": "2 YEAR ERIS SOFR SWAP - CHICAGO BOARD OF TRADE",
+    "first": "2023-08-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "129"
+   },
+   {
+    "code": "343603",
+    "name": "10 YEAR ERIS SOFR SWAP - CHICAGO BOARD OF TRADE",
+    "first": "2023-08-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "169"
+   },
+   {
+    "code": "344605",
+    "name": "5 YEAR ERIS SOFR SWAP - CHICAGO BOARD OF TRADE",
+    "first": "2023-05-16T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "180"
+   },
+   {
+    "code": "344606",
+    "name": "3 YEAR ERIS SOFR SWAP - CHICAGO BOARD OF TRADE",
+    "first": "2025-09-02T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "45"
+   },
+   {
+    "code": "344607",
+    "name": "7 YEAR ERIS SOFR SWAP - CHICAGO BOARD OF TRADE",
+    "first": "2026-04-07T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "22"
+   },
+   {
+    "code": "399741",
+    "name": "EURO FX/JAPANESE YEN XRATE - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2017-08-01T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "250"
+   },
+   {
+    "code": "405652",
+    "name": "MONT BELVIEU ETHYLENE FIN - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2026-03-03T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "18"
+   },
+   {
+    "code": "406651",
+    "name": "PGP PROPYLENE (PCW) CAL - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2024-07-30T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "93"
+   },
+   {
+    "code": "43874A",
+    "name": "S&P 500 ANNUAL DIVIDEND INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2017-06-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "489"
+   },
+   {
+    "code": "43874Q",
+    "name": "S&P 500 QUARTERLY DIVIDEND IND - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-11-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "148"
+   },
+   {
+    "code": "86465A",
+    "name": "GULF JET NY HEAT OIL SPR - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2018-12-24T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "411"
+   },
+   {
+    "code": "86565A",
+    "name": "GULF # 6 FUEL OIL CRACK - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-11-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "207"
+   }
+  ],
+  "history": [
+   {
+    "code": "001602",
+    "name": "WHEAT - CHICAGO BOARD OF TRADE",
+    "first": "1998-01-06T00:00:00.000",
+    "last": "2013-12-10T00:00:00.000",
+    "n": "832"
+   },
+   {
+    "code": "001602",
+    "name": "WHEAT-SRW - CHICAGO BOARD OF TRADE",
+    "first": "2013-12-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "673"
+   },
+   {
+    "code": "001612",
+    "name": "WHEAT-HRW - CHICAGO BOARD OF TRADE",
+    "first": "2013-12-17T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "673"
+   },
+   {
+    "code": "001612",
+    "name": "WHEAT - KANSAS CITY BOARD OF TRADE",
+    "first": "1998-01-06T00:00:00.000",
+    "last": "2013-12-10T00:00:00.000",
+    "n": "832"
+   },
+   {
+    "code": "002602",
+    "name": "CORN - CHICAGO BOARD OF TRADE",
+    "first": "1998-01-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1505"
+   },
+   {
+    "code": "005602",
+    "name": "SOYBEANS - CHICAGO BOARD OF TRADE",
+    "first": "1998-01-06T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1505"
+   },
+   {
+    "code": "007601",
+    "name": "SOYBEAN OIL - CHICAGO BOARD OF TRADE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1942"
+   },
+   {
+    "code": "020601",
+    "name": "LONG TERM U.S. TREASURY BONDS - CHICAGO BOARD OF TRADE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "1993-01-19T00:00:00.000",
+    "n": "178"
+   },
+   {
+    "code": "020601",
+    "name": "UST BOND - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "020601",
+    "name": "U.S. TREASURY BONDS - CHICAGO BOARD OF TRADE",
+    "first": "1993-01-26T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "1516"
+   },
+   {
+    "code": "022651",
+    "name": "#2 HEATING OIL- NY HARBOR-ULSD - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2017-10-03T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "227"
+   },
+   {
+    "code": "022651",
+    "name": "#2 HEATING OIL, NY HARBOR-ULSD - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2013-11-12T00:00:00.000",
+    "last": "2017-09-26T00:00:00.000",
+    "n": "203"
+   },
+   {
+    "code": "022651",
+    "name": "NO. 2 HEATING OIL, N.Y. HARBOR - NEW YORK MERCANTILE EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2013-11-05T00:00:00.000",
+    "n": "1262"
+   },
+   {
+    "code": "022651",
+    "name": "NY HARBOR ULSD - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "247"
+   },
+   {
+    "code": "022651",
+    "name": "NY HARBOR USLD - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2022-02-08T00:00:00.000",
+    "n": "1"
+   },
+   {
+    "code": "023651",
+    "name": "NAT GAS NYME - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "023651",
+    "name": "NATURAL GAS - NEW YORK MERCANTILE EXCHANGE",
+    "first": "1990-04-12T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "1590"
+   },
+   {
+    "code": "026603",
+    "name": "SOYBEAN MEAL - CHICAGO BOARD OF TRADE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1942"
+   },
+   {
+    "code": "033661",
+    "name": "COTTON NO. 2 - ICE FUTURES U.S.",
+    "first": "2007-09-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1001"
+   },
+   {
+    "code": "033661",
+    "name": "COTTON NO. 2 - NEW YORK BOARD OF TRADE",
+    "first": "2005-01-04T00:00:00.000",
+    "last": "2007-08-28T00:00:00.000",
+    "n": "139"
+   },
+   {
+    "code": "033661",
+    "name": "COTTON NO. 2 - NEW YORK COTTON EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2004-12-28T00:00:00.000",
+    "n": "800"
+   },
+   {
+    "code": "042601",
+    "name": "2 YEAR U.S. TREASURY NOTES - CHICAGO BOARD OF TRADE",
+    "first": "1990-06-29T00:00:00.000",
+    "last": "1993-01-19T00:00:00.000",
+    "n": "71"
+   },
+   {
+    "code": "042601",
+    "name": "2-YEAR U.S. TREASURY NOTES - CHICAGO BOARD OF TRADE",
+    "first": "1993-01-26T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "1515"
+   },
+   {
+    "code": "042601",
+    "name": "UST 2Y NOTE - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "043602",
+    "name": "10-YEAR U.S. TREASURY NOTES - CHICAGO BOARD OF TRADE",
+    "first": "1993-01-26T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "1516"
+   },
+   {
+    "code": "043602",
+    "name": "6.5-10 YEAR U.S. TREASURY NOTE - CHICAGO BOARD OF TRADE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "1993-01-19T00:00:00.000",
+    "n": "178"
+   },
+   {
+    "code": "043602",
+    "name": "UST 10Y NOTE - CHICAGO BOARD OF TRADE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "054642",
+    "name": "LEAN HOGS - CHICAGO MERCANTILE EXCHANGE",
+    "first": "1996-04-02T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1593"
+   },
+   {
+    "code": "057642",
+    "name": "LIVE CATTLE - CHICAGO MERCANTILE EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1942"
+   },
+   {
+    "code": "067651",
+    "name": "CRUDE OIL, LIGHT 'SWEET' - NEW YORK MERCANTILE EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2000-02-01T00:00:00.000",
+    "n": "545"
+   },
+   {
+    "code": "067651",
+    "name": "CRUDE OIL, LIGHT SWEET - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2000-02-08T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "1147"
+   },
+   {
+    "code": "067651",
+    "name": "WTI-PHYSICAL - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "073732",
+    "name": "COCOA - COFFEE,COCOA AND SUGAR EXCHANG",
+    "first": "1999-12-21T00:00:00.000",
+    "last": "2000-01-04T00:00:00.000",
+    "n": "3"
+   },
+   {
+    "code": "073732",
+    "name": "COCOA - COFFEE,SUGAR AND COCOA EXCHANG",
+    "first": "2000-01-11T00:00:00.000",
+    "last": "2002-04-23T00:00:00.000",
+    "n": "119"
+   },
+   {
+    "code": "073732",
+    "name": "COCOA - COFFEE, SUGAR AND COCOA EXCHANGE",
+    "first": "2003-02-25T00:00:00.000",
+    "last": "2004-12-28T00:00:00.000",
+    "n": "97"
+   },
+   {
+    "code": "073732",
+    "name": "COCOA - COFFEE,SUGAR AND COCOA EXCHANGE",
+    "first": "2002-04-30T00:00:00.000",
+    "last": "2003-02-14T00:00:00.000",
+    "n": "43"
+   },
+   {
+    "code": "073732",
+    "name": "COCOA - COFFEE, SUGAR & COCOA EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "1999-12-14T00:00:00.000",
+    "n": "537"
+   },
+   {
+    "code": "073732",
+    "name": "COCOA - ICE FUTURES U.S.",
+    "first": "2007-09-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1001"
+   },
+   {
+    "code": "073732",
+    "name": "COCOA - NEW YORK BOARD OF TRADE",
+    "first": "2005-01-04T00:00:00.000",
+    "last": "2007-08-28T00:00:00.000",
+    "n": "139"
+   },
+   {
+    "code": "075651",
+    "name": "PALLADIUM - NEW YORK MERCANTILE EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1867"
+   },
+   {
+    "code": "076651",
+    "name": "PLATINUM - NEW YORK MERCANTILE EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1941"
+   },
+   {
+    "code": "080732",
+    "name": "SUGAR NO. 11 - COFFEE,COCOA AND SUGAR EXCHANG",
+    "first": "1999-12-21T00:00:00.000",
+    "last": "2000-01-04T00:00:00.000",
+    "n": "3"
+   },
+   {
+    "code": "080732",
+    "name": "SUGAR NO. 11 - COFFEE,SUGAR AND COCOA EXCHANG",
+    "first": "2000-01-11T00:00:00.000",
+    "last": "2002-04-23T00:00:00.000",
+    "n": "119"
+   },
+   {
+    "code": "080732",
+    "name": "SUGAR NO. 11 - COFFEE, SUGAR AND COCOA EXCHANGE",
+    "first": "2003-02-25T00:00:00.000",
+    "last": "2004-12-28T00:00:00.000",
+    "n": "97"
+   },
+   {
+    "code": "080732",
+    "name": "SUGAR NO. 11 - COFFEE,SUGAR AND COCOA EXCHANGE",
+    "first": "2002-04-30T00:00:00.000",
+    "last": "2003-02-14T00:00:00.000",
+    "n": "43"
+   },
+   {
+    "code": "080732",
+    "name": "SUGAR NO. 11 - COFFEE, SUGAR & COCOA EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "1999-12-14T00:00:00.000",
+    "n": "537"
+   },
+   {
+    "code": "080732",
+    "name": "SUGAR NO. 11 - ICE FUTURES U.S.",
+    "first": "2007-09-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1001"
+   },
+   {
+    "code": "080732",
+    "name": "SUGAR NO. 11 - NEW YORK BOARD OF TRADE",
+    "first": "2005-01-04T00:00:00.000",
+    "last": "2007-08-28T00:00:00.000",
+    "n": "139"
+   },
+   {
+    "code": "083731",
+    "name": "COFFEE C - COFFEE,COCOA AND SUGAR EXCHANG",
+    "first": "1999-12-21T00:00:00.000",
+    "last": "2000-01-04T00:00:00.000",
+    "n": "3"
+   },
+   {
+    "code": "083731",
+    "name": "COFFEE C - COFFEE,SUGAR AND COCOA EXCHANG",
+    "first": "2000-01-11T00:00:00.000",
+    "last": "2002-04-23T00:00:00.000",
+    "n": "119"
+   },
+   {
+    "code": "083731",
+    "name": "COFFEE C - COFFEE, SUGAR AND COCOA EXCHANGE",
+    "first": "2003-02-25T00:00:00.000",
+    "last": "2004-12-28T00:00:00.000",
+    "n": "97"
+   },
+   {
+    "code": "083731",
+    "name": "COFFEE C - COFFEE,SUGAR AND COCOA EXCHANGE",
+    "first": "2002-04-30T00:00:00.000",
+    "last": "2003-02-14T00:00:00.000",
+    "n": "43"
+   },
+   {
+    "code": "083731",
+    "name": "COFFEE C - COFFEE, SUGAR & COCOA EXCHANGE",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "1999-12-14T00:00:00.000",
+    "n": "537"
+   },
+   {
+    "code": "083731",
+    "name": "COFFEE C - ICE FUTURES U.S.",
+    "first": "2007-09-04T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1001"
+   },
+   {
+    "code": "083731",
+    "name": "COFFEE C - NEW YORK BOARD OF TRADE",
+    "first": "2005-01-04T00:00:00.000",
+    "last": "2007-08-28T00:00:00.000",
+    "n": "139"
+   },
+   {
+    "code": "084691",
+    "name": "SILVER - COMMODITY EXCHANGE INC.",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1941"
+   },
+   {
+    "code": "085692",
+    "name": "COPPER- #1 - COMMODITY EXCHANGE INC.",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "085692",
+    "name": "COPPER-GRADE #1 - COMMODITY EXCHANGE INC.",
+    "first": "1989-07-31T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "1608"
+   },
+   {
+    "code": "088691",
+    "name": "GOLD - COMMODITY EXCHANGE INC.",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1941"
+   },
+   {
+    "code": "097741",
+    "name": "JAPANESE YEN - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2000-08-29T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1367"
+   },
+   {
+    "code": "097741",
+    "name": "JAPANESE YEN - INTERNATIONAL MONETARY MARKET",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "2000-08-22T00:00:00.000",
+    "n": "575"
+   },
+   {
+    "code": "098662",
+    "name": "USD INDEX - ICE FUTURES U.S.",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "098662",
+    "name": "U.S. DOLLAR INDEX - ICE FUTURES U.S.",
+    "first": "2007-09-04T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "753"
+   },
+   {
+    "code": "098662",
+    "name": "U.S. DOLLAR INDEX - NEW YORK BOARD OF TRADE",
+    "first": "2005-01-04T00:00:00.000",
+    "last": "2007-08-28T00:00:00.000",
+    "n": "139"
+   },
+   {
+    "code": "098662",
+    "name": "U.S. DOLLAR INDEX - NEW YORK COTTON EXCHANGE",
+    "first": "1992-05-29T00:00:00.000",
+    "last": "2004-12-28T00:00:00.000",
+    "n": "583"
+   },
+   {
+    "code": "099741",
+    "name": "EURO FX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2000-08-29T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1367"
+   },
+   {
+    "code": "099741",
+    "name": "EURO FX - INTERNATIONAL MONETARY MARKET",
+    "first": "1999-01-05T00:00:00.000",
+    "last": "2000-08-22T00:00:00.000",
+    "n": "86"
+   },
+   {
+    "code": "099741",
+    "name": "EUROPEAN CURRENCY UNIT - INTERNATIONAL MONETARY MARKET",
+    "first": "1986-01-15T00:00:00.000",
+    "last": "1986-08-29T00:00:00.000",
+    "n": "10"
+   },
+   {
+    "code": "111659",
+    "name": "GASOLINE BLENDSTOCK (RBOB) - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2006-02-14T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "834"
+   },
+   {
+    "code": "111659",
+    "name": "GASOLINE RBOB - NEW YORK MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "1170E1",
+    "name": "VIX FUTURES - CBOE FUTURES EXCHANGE",
+    "first": "2004-07-27T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "1120"
+   },
+   {
+    "code": "133741",
+    "name": "BITCOIN - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2018-04-10T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "448"
+   },
+   {
+    "code": "13874A",
+    "name": "E-MINI S&P 500 - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "13874A",
+    "name": "E-MINI S&P 500 STOCK INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2000-08-29T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "1119"
+   },
+   {
+    "code": "13874A",
+    "name": "E-MINI S&P 500 STOCK INDEX - INTERNATIONAL MONETARY MARKET",
+    "first": "1997-09-16T00:00:00.000",
+    "last": "2000-08-22T00:00:00.000",
+    "n": "149"
+   },
+   {
+    "code": "209742",
+    "name": "E-MINI NASDAQ 100 STOCK INDEX - INTERNATIONAL MONETARY MARKET",
+    "first": "1999-06-29T00:00:00.000",
+    "last": "1999-12-14T00:00:00.000",
+    "n": "25"
+   },
+   {
+    "code": "209742",
+    "name": "NASDAQ-100 STOCK INDEX - INTERNATIONAL MONETARY MARKET",
+    "first": "1999-06-22T00:00:00.000",
+    "last": "1999-06-22T00:00:00.000",
+    "n": "1"
+   },
+   {
+    "code": "209742",
+    "name": "NASDAQ-100 STOCK INDEX (MINI) - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2000-08-29T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "1119"
+   },
+   {
+    "code": "209742",
+    "name": "NASDAQ-100 STOCK INDEX (MINI) - INTERNATIONAL MONETARY MARKET",
+    "first": "1999-12-21T00:00:00.000",
+    "last": "2000-08-22T00:00:00.000",
+    "n": "36"
+   },
+   {
+    "code": "209742",
+    "name": "NASDAQ MINI - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   },
+   {
+    "code": "239742",
+    "name": "E-MINI RUSSELL 2000 INDEX - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2017-08-15T00:00:00.000",
+    "last": "2022-02-01T00:00:00.000",
+    "n": "234"
+   },
+   {
+    "code": "239742",
+    "name": "RUSSEL 2000 STOCK INDEX (MINI) - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2002-08-13T00:00:00.000",
+    "last": "2008-09-16T00:00:00.000",
+    "n": "312"
+   },
+   {
+    "code": "239742",
+    "name": "RUSSELL E-MINI - CHICAGO MERCANTILE EXCHANGE",
+    "first": "2022-02-08T00:00:00.000",
+    "last": "2026-11-03T00:00:00.000",
+    "n": "248"
+   }
+  ],
+  "wti_latest": [
+   {
+    "id": "261103067651F",
+    "market_and_exchange_names": "WTI-PHYSICAL - NEW YORK MERCANTILE EXCHANGE",
+    "report_date_as_yyyy_mm_dd": "2026-11-03T00:00:00.000",
+    "yyyy_report_week_ww": "2026 Report Week 44",
+    "contract_market_name": "WTI-PHYSICAL",
+    "cftc_contract_market_code": "067651",
+    "cftc_market_code": "NYME",
+    "cftc_region_code": "NYC",
+    "cftc_commodity_code": "067 ",
+    "commodity_name": "CRUDE OIL",
+    "open_interest_all": "1908732",
+    "noncomm_positions_long_all": "324523",
+    "noncomm_positions_short_all": "244234",
+    "noncomm_postions_spread_all": "594556",
+    "comm_positions_long_all": "907237",
+    "comm_positions_short_all": "1018514",
+    "tot_rept_positions_long_all": "1826316",
+    "tot_rept_positions_short": "1857304",
+    "nonrept_positions_long_all": "82416",
+    "nonrept_positions_short_all": "51428",
+    "open_interest_old": "1908732",
+    "noncomm_positions_long_old": "324523",
+    "noncomm_positions_short_old": "244234",
+    "noncomm_positions_spread": "594556",
+    "comm_positions_long_old": "907237",
+    "comm_positions_short_old": "1018514",
+    "tot_rept_positions_long_old": "1826316",
+    "tot_rept_positions_short_1": "1857304",
+    "nonrept_positions_long_old": "82416",
+    "nonrept_positions_short_old": "51428",
+    "open_interest_other": "0",
+    "noncomm_positions_long_other": "0",
+    "noncomm_positions_short_other": "0",
+    "noncomm_positions_spread_1": "0",
+    "comm_positions_long_other": "0",
+    "comm_positions_short_other": "0",
+    "tot_rept_positions_long_other": "0",
+    "tot_rept_positions_short_2": "0",
+    "nonrept_positions_long_other": "0",
+    "nonrept_positions_short_other": "0",
+    "change_in_open_interest_all": "22452",
+    "change_in_noncomm_long_all": "-5645",
+    "change_in_noncomm_short_all": "-11591",
+    "change_in_noncomm_spead_all": "25496",
+    "change_in_comm_long_all": "800",
+    "change_in_comm_short_all": "9109",
+    "change_in_tot_rept_long_all": "20651",
+    "change_in_tot_rept_short": "23014",
+    "change_in_nonrept_long_all": "1801",
+    "change_in_nonrept_short_all": "-562",
+    "pct_of_open_interest_all": "100.0",
+    "pct_of_oi_noncomm_long_all": "17.0",
+    "pct_of_oi_noncomm_short_all": "12.8",
+    "pct_of_oi_noncomm_spread": "31.1",
+    "pct_of_oi_comm_long_all": "47.5",
+    "pct_of_oi_comm_short_all": "53.4",
+    "pct_of_oi_tot_rept_long_all": "95.7",
+    "pct_of_oi_tot_rept_short": "97.3",
+    "pct_of_oi_nonrept_long_all": "4.3",
+    "pct_of_oi_nonrept_short_all": "2.7",
+    "pct_of_open_interest_old": "100.0",
+    "pct_of_oi_noncomm_long_old": "17.0",
+    "pct_of_oi_noncomm_short_old": "12.8",
+    "pct_of_oi_noncomm_spread_1": "31.1",
+    "pct_of_oi_comm_long_old": "47.5",
+    "pct_of_oi_comm_short_old": "53.4",
+    "pct_of_oi_tot_rept_long_old": "95.7",
+    "pct_of_oi_tot_rept_short_1": "97.3",
+    "pct_of_oi_nonrept_long_old": "4.3",
+    "pct_of_oi_nonrept_short_old": "2.7",
+    "pct_of_open_interest_other": "0.0",
+    "pct_of_oi_noncomm_long_other": "0.0",
+    "pct_of_oi_noncomm_short_other": "0.0",
+    "pct_of_oi_noncomm_spread_2": "0.0",
+    "pct_of_oi_comm_long_other": "0.0",
+    "pct_of_oi_comm_short_other": "0.0",
+    "pct_of_oi_tot_rept_long_other": "0.0",
+    "pct_of_oi_tot_rept_short_2": "0.0",
+    "pct_of_oi_nonrept_long_other": "0.0",
+    "pct_of_oi_nonrept_short_other": "0.0",
+    "traders_tot_all": "307",
+    "traders_noncomm_long_all": "128",
+    "traders_noncomm_short_all": "63",
+    "traders_noncomm_spread_all": "121",
+    "traders_comm_long_all": "99",
+    "traders_comm_short_all": "97",
+    "traders_tot_rept_long_all": "277",
+    "traders_tot_rept_short_all": "233",
+    "traders_tot_old": "307",
+    "traders_noncomm_long_old": "128",
+    "traders_noncomm_short_old": "63",
+    "traders_noncomm_spead_old": "121",
+    "traders_comm_long_old": "99",
+    "traders_comm_short_old": "97",
+    "traders_tot_rept_long_old": "277",
+    "traders_tot_rept_short_old": "233",
+    "traders_tot_other": "0",
+    "traders_noncomm_long_other": "0",
+    "traders_noncomm_short_other": "0",
+    "traders_noncomm_spread_other": "0",
+    "traders_comm_long_other": "0",
+    "traders_comm_short_other": "0",
+    "traders_tot_rept_long_other": "0",
+    "traders_tot_rept_short_other": "0",
+    "conc_gross_le_4_tdr_long": "16.9",
+    "conc_gross_le_4_tdr_short": "22.1",
+    "conc_gross_le_8_tdr_long": "30.1",
+    "conc_gross_le_8_tdr_short": "33.2",
+    "conc_net_le_4_tdr_long_all": "11.7",
+    "conc_net_le_4_tdr_short_all": "14.7",
+    "conc_net_le_8_tdr_long_all": "20.0",
+    "conc_net_le_8_tdr_short_all": "22.2",
+    "conc_gross_le_4_tdr_long_1": "16.9",
+    "conc_gross_le_4_tdr_short_1": "22.1",
+    "conc_gross_le_8_tdr_long_1": "30.1",
+    "conc_gross_le_8_tdr_short_1": "33.2",
+    "conc_net_le_4_tdr_long_old": "11.7",
+    "conc_net_le_4_tdr_short_old": "14.7",
+    "conc_net_le_8_tdr_long_old": "20.0",
+    "conc_net_le_8_tdr_short_old": "22.2",
+    "conc_gross_le_4_tdr_long_2": "0.0",
+    "conc_gross_le_4_tdr_short_2": "0.0",
+    "conc_gross_le_8_tdr_long_2": "0.0",
+    "conc_gross_le_8_tdr_short_2": "0.0",
+    "conc_net_le_4_tdr_long_other": "0.0",
+    "conc_net_le_4_tdr_short_other": "0.0",
+    "conc_net_le_8_tdr_long_other": "0.0",
+    "conc_net_le_8_tdr_short_other": "0.0",
+    "contract_units": "(CONTRACTS OF 1,000 BARRELS)",
+    "commodity": "CRUDE OIL",
+    "commodity_subgroup_name": "PETROLEUM AND PRODUCTS",
+    "commodity_group_name": "NATURAL RESOURCES",
+    "futonly_or_combined": "FutOnly"
+   },
+   {
+    "id": "261027067651F",
+    "market_and_exchange_names": "WTI-PHYSICAL - NEW YORK MERCANTILE EXCHANGE",
+    "report_date_as_yyyy_mm_dd": "2026-10-27T00:00:00.000",
+    "yyyy_report_week_ww": "2026 Report Week 43",
+    "contract_market_name": "WTI-PHYSICAL",
+    "cftc_contract_market_code": "067651",
+    "cftc_market_code": "NYME",
+    "cftc_region_code": "NYC",
+    "cftc_commodity_code": "067 ",
+    "commodity_name": "CRUDE OIL",
+    "open_interest_all": "1886280",
+    "noncomm_positions_long_all": "330168",
+    "noncomm_positions_short_all": "255825",
+    "noncomm_postions_spread_all": "569060",
+    "comm_positions_long_all": "906437",
+    "comm_positions_short_all": "1009405",
+    "tot_rept_positions_long_all": "1805665",
+    "tot_rept_positions_short": "1834290",
+    "nonrept_positions_long_all": "80615",
+    "nonrept_positions_short_all": "51990",
+    "open_interest_old": "1886280",
+    "noncomm_positions_long_old": "330168",
+    "noncomm_positions_short_old": "255825",
+    "noncomm_positions_spread": "569060",
+    "comm_positions_long_old": "906437",
+    "comm_positions_short_old": "1009405",
+    "tot_rept_positions_long_old": "1805665",
+    "tot_rept_positions_short_1": "1834290",
+    "nonrept_positions_long_old": "80615",
+    "nonrept_positions_short_old": "51990",
+    "open_interest_other": "0",
+    "noncomm_positions_long_other": "0",
+    "noncomm_positions_short_other": "0",
+    "noncomm_positions_spread_1": "0",
+    "comm_positions_long_other": "0",
+    "comm_positions_short_other": "0",
+    "tot_rept_positions_long_other": "0",
+    "tot_rept_positions_short_2": "0",
+    "nonrept_positions_long_other": "0",
+    "nonrept_positions_short_other": "0",
+    "change_in_open_interest_all": "51136",
+    "change_in_noncomm_long_all": "-4944",
+    "change_in_noncomm_short_all": "10038",
+    "change_in_noncomm_spead_all": "35977",
+    "change_in_comm_long_all": "15524",
+    "change_in_comm_short_all": "2334",
+    "change_in_tot_rept_long_all": "46557",
+    "change_in_tot_rept_short": "48349",
+    "change_in_nonrept_long_all": "4579",
+    "change_in_nonrept_short_all": "2787",
+    "pct_of_open_interest_all": "100.0",
+    "pct_of_oi_noncomm_long_all": "17.5",
+    "pct_of_oi_noncomm_short_all": "13.6",
+    "pct_of_oi_noncomm_spread": "30.2",
+    "pct_of_oi_comm_long_all": "48.1",
+    "pct_of_oi_comm_short_all": "53.5",
+    "pct_of_oi_tot_rept_long_all": "95.7",
+    "pct_of_oi_tot_rept_short": "97.2",
+    "pct_of_oi_nonrept_long_all": "4.3",
+    "pct_of_oi_nonrept_short_all": "2.8",
+    "pct_of_open_interest_old": "100.0",
+    "pct_of_oi_noncomm_long_old": "17.5",
+    "pct_of_oi_noncomm_short_old": "13.6",
+    "pct_of_oi_noncomm_spread_1": "30.2",
+    "pct_of_oi_comm_long_old": "48.1",
+    "pct_of_oi_comm_short_old": "53.5",
+    "pct_of_oi_tot_rept_long_old": "95.7",
+    "pct_of_oi_tot_rept_short_1": "97.2",
+    "pct_of_oi_nonrept_long_old": "4.3",
+    "pct_of_oi_nonrept_short_old": "2.8",
+    "pct_of_open_interest_other": "0.0",
+    "pct_of_oi_noncomm_long_other": "0.0",
+    "pct_of_oi_noncomm_short_other": "0.0",
+    "pct_of_oi_noncomm_spread_2": "0.0",
+    "pct_of_oi_comm_long_other": "0.0",
+    "pct_of_oi_comm_short_other": "0.0",
+    "pct_of_oi_tot_rept_long_other": "0.0",
+    "pct_of_oi_tot_rept_short_2": "0.0",
+    "pct_of_oi_nonrept_long_other": "0.0",
+    "pct_of_oi_nonrept_short_other": "0.0",
+    "traders_tot_all": "306",
+    "traders_noncomm_long_all": "121",
+    "traders_noncomm_short_all": "66",
+    "traders_noncomm_spread_all": "118",
+    "traders_comm_long_all": "92",
+    "traders_comm_short_all": "97",
+    "traders_tot_rept_long_all": "267",
+    "traders_tot_rept_short_all": "235",
+    "traders_tot_old": "306",
+    "traders_noncomm_long_old": "121",
+    "traders_noncomm_short_old": "66",
+    "traders_noncomm_spead_old": "118",
+    "traders_comm_long_old": "92",
+    "traders_comm_short_old": "97",
+    "traders_tot_rept_long_old": "267",
+    "traders_tot_rept_short_old": "235",
+    "traders_tot_other": "0",
+    "traders_noncomm_long_other": "0",
+    "traders_noncomm_short_other": "0",
+    "traders_noncomm_spread_other": "0",
+    "traders_comm_long_other": "0",
+    "traders_comm_short_other": "0",
+    "traders_tot_rept_long_other": "0",
+    "traders_tot_rept_short_other": "0",
+    "conc_gross_le_4_tdr_long": "17.2",
+    "conc_gross_le_4_tdr_short": "22.1",
+    "conc_gross_le_8_tdr_long": "30.6",
+    "conc_gross_le_8_tdr_short": "33.0",
+    "conc_net_le_4_tdr_long_all": "11.9",
+    "conc_net_le_4_tdr_short_all": "14.8",
+    "conc_net_le_8_tdr_long_all": "20.1",
+    "conc_net_le_8_tdr_short_all": "22.4",
+    "conc_gross_le_4_tdr_long_1": "17.2",
+    "conc_gross_le_4_tdr_short_1": "22.1",
+    "conc_gross_le_8_tdr_long_1": "30.6",
+    "conc_gross_le_8_tdr_short_1": "33.0",
+    "conc_net_le_4_tdr_long_old": "11.9",
+    "conc_net_le_4_tdr_short_old": "14.8",
+    "conc_net_le_8_tdr_long_old": "20.1",
+    "conc_net_le_8_tdr_short_old": "22.4",
+    "conc_gross_le_4_tdr_long_2": "0.0",
+    "conc_gross_le_4_tdr_short_2": "0.0",
+    "conc_gross_le_8_tdr_long_2": "0.0",
+    "conc_gross_le_8_tdr_short_2": "0.0",
+    "conc_net_le_4_tdr_long_other": "0.0",
+    "conc_net_le_4_tdr_short_other": "0.0",
+    "conc_net_le_8_tdr_long_other": "0.0",
+    "conc_net_le_8_tdr_short_other": "0.0",
+    "contract_units": "(CONTRACTS OF 1,000 BARRELS)",
+    "commodity": "CRUDE OIL",
+    "commodity_subgroup_name": "PETROLEUM AND PRODUCTS",
+    "commodity_group_name": "NATURAL RESOURCES",
+    "futonly_or_combined": "FutOnly"
+   }
+  ]
+ },
+ "fred": {
+  "NCBEILQ027S": {
+   "ok": true,
+   "n": 305,
+   "first": "1945-10-01",
+   "last": "2026-04-01",
+   "last_value": 83050847.0
+  },
+  "FBCELLQ027S": {
+   "ok": true,
+   "n": 305,
+   "first": "1945-10-01",
+   "last": "2026-04-01",
+   "last_value": 26193848.0
+  },
+  "BOGZ1LM893064105Q": {
+   "ok": true,
+   "n": 305,
+   "first": "1945-10-01",
+   "last": "2026-04-01",
+   "last_value": 123687233.0
+  },
+  "BOGZ1FL893064105Q": {
+   "ok": true,
+   "n": 305,
+   "first": "1945-10-01",
+   "last": "2026-04-01",
+   "last_value": 123687233.0
+  },
+  "MVEONWMVBSNNCB": {
+   "ok": true,
+   "n": 271,
+   "first": "1945-10-01",
+   "last": "2017-10-01",
+   "last_value": 26952.91
+  },
+  "FYGFDPUN": {
+   "ok": true,
+   "n": 226,
+   "first": "1970-01-01",
+   "last": "2026-04-01",
+   "last_value": 31705538.3534684
+  },
+  "GFDEBTN": {
+   "ok": true,
+   "n": 242,
+   "first": "1966-01-01",
+   "last": "2026-04-01",
+   "last_value": 39462398.0
+  },
+  "MMMFFAQ027S": {
+   "ok": true,
+   "n": 305,
+   "first": "1945-10-01",
+   "last": "2026-04-01",
+   "last_value": 8441374.0
+  },
+  "WRMFNS": {
+   "ok": true,
+   "n": 2436,
+   "first": "1980-02-04",
+   "last": "2026-10-05",
+   "last_value": 3037.0
+  },
+  "WRMFSL": {
+   "ok": true,
+   "n": 2140,
+   "first": "1980-02-04",
+   "last": "2021-02-01",
+   "last_value": 1429.1
+  },
+  "WIMFNS": {
+   "ok": true,
+   "n": 2140,
+   "first": "1980-02-04",
+   "last": "2021-02-01",
+   "last_value": 2882.8
+  },
+  "WIMFSL": {
+   "ok": true,
+   "n": 2140,
+   "first": "1980-02-04",
+   "last": "2021-02-01",
+   "last_value": 2840.9
+  },
+  "RMFSL": {
+   "ok": true,
+   "n": 645,
+   "first": "1973-01-01",
+   "last": "2026-09-01",
+   "last_value": 3085.0
+  },
+  "BOGZ1FL153064105Q": {
+   "ok": false,
+   "status": 404,
+   "head": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta"
+  },
+  "HNOCEAQ027S": {
+   "ok": true,
+   "n": 305,
+   "first": "1945-10-01",
+   "last": "2026-04-01",
+   "last_value": 52119174.0
+  },
+  "BOGZ1LM153064105Q": {
+   "ok": false,
+   "status": 404,
+   "head": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta"
+  },
+  "TCMILBSHNO": {
+   "ok": true,
+   "n": 305,
+   "first": "1945-10-01",
+   "last": "2026-04-01",
+   "last_value": 21295902.0
+  },
+  "DGS10": {
+   "ok": true,
+   "n": 16201,
+   "first": "1962-01-02",
+   "last": "2026-11-12",
+   "last_value": 5.1
+  },
+  "SP500": {
+   "ok": true,
+   "n": 2514,
+   "first": "2016-11-14",
+   "last": "2026-11-13",
+   "last_value": 7561.67
+  },
+  "BOGZ1FL893064125Q": {
+   "ok": false,
+   "status": 404,
+   "head": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta"
+  },
+  "BOGZ1LM883164105Q": {
+   "ok": true,
+   "n": 305,
+   "first": "1945-10-01",
+   "last": "2026-04-01",
+   "last_value": 109244695.0
+  },
+  "CORPBNDS": {
+   "ok": false,
+   "status": 404,
+   "head": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta"
+  },
+  "BOGZ1FL893163005Q": {
+   "ok": false,
+   "status": 404,
+   "head": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta"
+  },
+  "BOGZ1FL634090005Q": {
+   "ok": false,
+   "status": 404,
+   "head": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta"
+  }
+ },
+ "yahoo": {
+  "CL=F": {
+   "ok": true,
+   "n": 6587,
+   "first": "2000-08-23",
+   "last": "2026-11-16",
+   "last_close": 87.48999786376953
+  },
+  "NG=F": {
+   "ok": true,
+   "n": 6584,
+   "first": "2000-08-30",
+   "last": "2026-11-16",
+   "last_close": 3.171999931335449
+  },
+  "HO=F": {
+   "ok": true,
+   "n": 6581,
+   "first": "2000-09-01",
+   "last": "2026-11-16",
+   "last_close": 4.185800075531006
+  },
+  "RB=F": {
+   "ok": true,
+   "n": 6542,
+   "first": "2000-11-01",
+   "last": "2026-11-16",
+   "last_close": 2.549999952316284
+  },
+  "GC=F": {
+   "ok": true,
+   "n": 6579,
+   "first": "2000-08-30",
+   "last": "2026-11-16",
+   "last_close": 3871.800048828125
+  },
+  "SI=F": {
+   "ok": true,
+   "n": 6580,
+   "first": "2000-08-30",
+   "last": "2026-11-16",
+   "last_close": 47.2400016784668
+  },
+  "HG=F": {
+   "ok": true,
+   "n": 6583,
+   "first": "2000-08-30",
+   "last": "2026-11-16",
+   "last_close": 6.060999870300293
+  },
+  "PL=F": {
+   "ok": true,
+   "n": 6062,
+   "first": "2000-01-04",
+   "last": "2026-11-16",
+   "last_close": 1462.300048828125
+  },
+  "PA=F": {
+   "ok": true,
+   "n": 6301,
+   "first": "2000-01-04",
+   "last": "2026-11-16",
+   "last_close": 986.5
+  },
+  "ZC=F": {
+   "ok": true,
+   "n": 6590,
+   "first": "2000-07-17",
+   "last": "2026-11-16",
+   "last_close": 444.75
+  },
+  "ZW=F": {
+   "ok": true,
+   "n": 6602,
+   "first": "2000-07-17",
+   "last": "2026-11-16",
+   "last_close": 590.0
+  },
+  "KE=F": {
+   "ok": true,
+   "n": 6579,
+   "first": "2000-09-21",
+   "last": "2026-11-16",
+   "last_close": 634.0
+  },
+  "ZS=F": {
+   "ok": true,
+   "n": 6582,
+   "first": "2000-09-15",
+   "last": "2026-11-16",
+   "last_close": 1225.75
+  },
+  "SB=F": {
+   "ok": true,
+   "n": 6701,
+   "first": "2000-03-01",
+   "last": "2026-11-16",
+   "last_close": 18.260000228881836
+  },
+  "KC=F": {
+   "ok": true,
+   "n": 6738,
+   "first": "2000-01-03",
+   "last": "2026-11-16",
+   "last_close": 273.45001220703125
+  },
+  "CT=F": {
+   "ok": true,
+   "n": 6740,
+   "first": "2000-01-03",
+   "last": "2026-11-16",
+   "last_close": 81.33999633789062
+  },
+  "CC=F": {
+   "ok": true,
+   "n": 6740,
+   "first": "2000-01-03",
+   "last": "2026-11-16",
+   "last_close": 5269.0
+  },
+  "LE=F": {
+   "ok": true,
+   "n": 6444,
+   "first": "2001-03-01",
+   "last": "2026-11-13",
+   "last_close": 220.64999389648438
+  },
+  "HE=F": {
+   "ok": true,
+   "n": 6512,
+   "first": "2000-12-15",
+   "last": "2026-11-13",
+   "last_close": 55.45000076293945
+  },
+  "ES=F": {
+   "ok": true,
+   "n": 6606,
+   "first": "2000-09-18",
+   "last": "2026-11-16",
+   "last_close": 7533.5
+  },
+  "NQ=F": {
+   "ok": true,
+   "n": 6606,
+   "first": "2000-09-18",
+   "last": "2026-11-16",
+   "last_close": 27647.0
+  },
+  "ZN=F": {
+   "ok": true,
+   "n": 6568,
+   "first": "2000-09-21",
+   "last": "2026-11-16",
+   "last_close": 105.28125
+  },
+  "ZB=F": {
+   "ok": true,
+   "n": 6574,
+   "first": "2000-09-21",
+   "last": "2026-11-16",
+   "last_close": 105.375
+  },
+  "BTC=F": {
+   "ok": true,
+   "n": 2243,
+   "first": "2017-12-18",
+   "last": "2026-11-16",
+   "last_close": 64415.0
+  },
+  "BTC-USD": {
+   "ok": true,
+   "n": 4444,
+   "first": "2014-09-17",
+   "last": "2026-11-16",
+   "last_close": 64119.26953125
+  },
+  "DX=F": {
+   "ok": false,
+   "err": "empty"
+  },
+  "DX-Y.NYB": {
+   "ok": true,
+   "n": 6788,
+   "first": "2000-01-03",
+   "last": "2026-11-16",
+   "last_close": 103.51000213623047
+  },
+  "^VIX": {
+   "ok": true,
+   "n": 6761,
+   "first": "2000-01-03",
+   "last": "2026-11-16",
+   "last_close": 20.639999389648438
+  },
+  "^GSPC": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 7561.669921875
+  },
+  "^TNX": {
+   "ok": true,
+   "n": 6753,
+   "first": "2000-01-03",
+   "last": "2026-11-16",
+   "last_close": 5.133000373840332
+  },
+  "TLT": {
+   "ok": true,
+   "n": 6114,
+   "first": "2002-07-30",
+   "last": "2026-11-13",
+   "last_close": 79.37999725341797
+  },
+  "IEF": {
+   "ok": true,
+   "n": 6114,
+   "first": "2002-07-30",
+   "last": "2026-11-13",
+   "last_close": 90.04000091552734
+  },
+  "SPY": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 754.3699951171875
+  },
+  "RSP": {
+   "ok": true,
+   "n": 5924,
+   "first": "2003-05-01",
+   "last": "2026-11-13",
+   "last_close": 221.16000366210938
+  },
+  "QQQ": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 679.8900146484375
+  },
+  "IWM": {
+   "ok": true,
+   "n": 6657,
+   "first": "2000-05-26",
+   "last": "2026-11-13",
+   "last_close": 277.5400085449219
+  },
+  "XLK": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 170.27999877929688
+  },
+  "XLF": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 58.68000030517578
+  },
+  "XLV": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 188.85000610351562
+  },
+  "XLY": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 119.9800033569336
+  },
+  "XLC": {
+   "ok": true,
+   "n": 2114,
+   "first": "2018-06-19",
+   "last": "2026-11-13",
+   "last_close": 108.69000244140625
+  },
+  "XLI": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 168.77999877929688
+  },
+  "XLP": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 92.3499984741211
+  },
+  "XLE": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 64.95999908447266
+  },
+  "XLU": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 44.040000915527344
+  },
+  "XLRE": {
+   "ok": true,
+   "n": 2792,
+   "first": "2015-10-08",
+   "last": "2026-11-13",
+   "last_close": 44.369998931884766
+  },
+  "XLB": {
+   "ok": true,
+   "n": 6758,
+   "first": "2000-01-03",
+   "last": "2026-11-13",
+   "last_close": 52.22999954223633
+  },
+  "BZ=F": {
+   "ok": true,
+   "n": 4805,
+   "first": "2007-07-30",
+   "last": "2026-11-16",
+   "last_close": 94.12000274658203
+  },
+  "EURUSD=X": {
+   "ok": true,
+   "n": 5957,
+   "first": "2003-12-01",
+   "last": "2026-11-16",
+   "last_close": 1.1014429330825806
+  },
+  "6E=F": {
+   "ok": true,
+   "n": 6608,
+   "first": "2000-09-12",
+   "last": "2026-11-16",
+   "last_close": 1.1022499799728394
+  },
+  "RTY=F": {
+   "ok": true,
+   "n": 2356,
+   "first": "2017-07-10",
+   "last": "2026-11-16",
+   "last_close": 2783.60009765625
+  },
+  "_fast_info_AAPL": {
+   "market_cap": 5177380321484.68,
+   "shares": 14532182000.0
+  },
+  "_spy_sector_weightings": {
+   "realestate": 0.018,
+   "consumer_cyclical": 0.0919,
+   "basic_materials": 0.015800001,
+   "consumer_defensive": 0.048800003,
+   "technology": 0.3823,
+   "communication_services": 0.0842,
+   "financial_services": 0.120299995,
+   "utilities": 0.0209,
+   "industrials": 0.0761,
+   "energy": 0.039100002,
+   "healthcare": 0.1025
+  },
+  "_spy_top_holdings": [
+   {
+    "Symbol": "AAPL",
+    "Name": "Apple Inc",
+    "Holding Percent": 0.0770069
+   },
+   {
+    "Symbol": "NVDA",
+    "Name": "NVIDIA Corp",
+    "Holding Percent": 0.0758232
+   },
+   {
+    "Symbol": "MSFT",
+    "Name": "Microsoft Corp",
+    "Holding Percent": 0.0593322
+   },
+   {
+    "Symbol": "AMZN",
+    "Name": "Amazon.com Inc",
+    "Holding Percent": 0.0361188
+   },
+   {
+    "Symbol": "GOOGL",
+    "Name": "Alphabet Inc Class A",
+    "Holding Percent": 0.0251408
+   },
+   {
+    "Symbol": "AVGO",
+    "Name": "Broadcom Inc",
+    "Holding Percent": 0.0237518
+   },
+   {
+    "Symbol": "META",
+    "Name": "Meta Platforms Inc Class A",
+    "Holding Percent": 0.020762898
+   },
+   {
+    "Symbol": "GOOG",
+    "Name": "Alphabet Inc Class C",
+    "Holding Percent": 0.020247199
+   },
+   {
+    "Symbol": "LLY",
+    "Name": "Eli Lilly and Co",
+    "Holding Percent": 0.0173671
+   },
+   {
+    "Symbol": "TSLA",
+    "Name": "Tesla Inc",
+    "Holding Percent": 0.017252099
+   }
+  ]
+ },
+ "errors": []
+}
